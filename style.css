@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer-container{
+    background-color: lightgray;
+    padding-bottom: 4rem;
+}
+.footer{
+    margin: auto;
+    width:80%;
+    display: flex;
+}
+
+.footer-container a:hover {
+    background: darkslategrey;
+    text-decoration: underline;
+}
+
+.footer-container a:active {
+    background: rgb(235, 117, 134);
+}
+.footer-container a {
+    text-decoration: none;
+    color: bisque;
+}
