@@ -3,43 +3,72 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    min-height:100vh;
-
-    
+    min-height:100vh; 
 }
-.search-box{
-    position:center;
-    background:beige;
-    height: 40px;
-    border-radius:30px;
+header{
+    width:100%;
+    height:70px;
+    background-color:burlywood;
+}
+h1{
+    positon:absolute;
+    padding:3px;
+    float:left;
+    margin-left:2%;
+    margin-top:10px;
+    font-family:"Alfa Slab One ",cursive;
+    color:black;
+}
+span{
+    color:#ffffff;
+}
+ul{
+width:auto;
+float:right;
+margin-top:8px;
+}
+li{
+    display:inline-block;
+    padding:15px 30px;
+}
+a{
+    text-align:left;
+    color:rgb(17, 17, 14);
+    text-decoration:none;
+    font-family:"Open Sans", sans-serif;
+    font-size:1.2vw;
     
+} 
+.search-box{
+    position:left;
+    background:beige;
+    height: 30px;
+    width: 40%;
+    border-radius:5px;
+}
 
+.search-txt{
+    width: 40%;
+    height:25px;
+    position: left;
+    border-radius: 5px;
 }
 .footer-container{
     background-color: rgb(97, 89, 89);
-    
-    padding:2rem 0 2rem 0;
+    padding:0;
     position:sticky;
     top:100%;
-    
-
-  
 }
 .footer{
     margin:auto;
     width:80%;
-
     display: flex;
     flex-wrap: wrap;
-    
-    
 }
-
 .footer-heading a:hover {
     color: rgb(37, 39, 39);
     text-decoration: underline;
     transition: 0.3s ease-out;
-
 }
 
 .footer-container a:active {
@@ -48,23 +77,16 @@ body{
 .footer-heading a {
     text-decoration: none;
     color: bisque;
-    margin-bottom:0.5rem;
-
-    
-    
+    margin-bottom:0.5rem;  
 }
-
 .footer-heading {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
-
-.footer-heading h2{
-    margin-bottom:2rem;
-
+.footer-heading h4{
+    margin-bottom:1rem;
 }
-
 #footer-email {
     width: 230px;
     height: 30px;
@@ -75,7 +97,6 @@ body{
     font-size:1rem;
     margin-bottom: 0.2rem;
 }
-
 #footer-email-btn {
     width: 60px;
     height: 20px;
@@ -92,4 +113,6 @@ body{
     background-color: rgb(105, 196, 230);
     transition: all 0.4s ease-out;
 }
+
+
 
