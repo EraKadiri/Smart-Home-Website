@@ -1,0 +1,10 @@
+p{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    text-align: left;
+    
+}
+div{
+    color: #481409;
+}
