@@ -1,9 +1,11 @@
 body{
-    
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    min-height:100vh;
+
+    
 }
 .search-box{
     position:center;
@@ -15,22 +17,29 @@ body{
 }
 .footer-container{
     background-color: rgb(97, 89, 89);
-    padding: 2rem 0 2rem 0;
     
+    padding:2rem 0 2rem 0;
+    position:sticky;
+    top:100%;
+    
+
+  
 }
 .footer{
-    margin: auto;
-    height: 40vh;
+    margin:auto;
     width:80%;
+
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    
+    
 }
 
 .footer-heading a:hover {
     color: rgb(37, 39, 39);
     text-decoration: underline;
     transition: 0.3s ease-out;
+
 }
 
 .footer-container a:active {
@@ -39,7 +48,9 @@ body{
 .footer-heading a {
     text-decoration: none;
     color: bisque;
-    margin-bottom: 0.5rem;
+    margin-bottom:0.5rem;
+
+    
     
 }
 
@@ -50,7 +61,8 @@ body{
 }
 
 .footer-heading h2{
-    margin-bottom: 2rem;
+    margin-bottom:2rem;
+
 }
 
 #footer-email {
