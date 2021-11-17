@@ -7,17 +7,46 @@ body{
     min-height:100vh; 
     background:#b7c4cc;
 } 
+.box{
+    position:relative;
+    margin-top:5px;  
+}
+input{
+    position:relative;
+    display:inline-block;
+    font-size:20px;
+    box-sizing:border-box;
+    transition: .5s; 
+}
+input[type="text"]{
+    background: whitesmoke;
+    width:340px;
+    height: 35px;
+    border:none;
+    outline:none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+.box input[type="submit"]{
+    position:relative;
+    border-radius: 0 25px 25px 0;
+    left:-5px;
+    height:35px;
+    width:150px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background:rgb(154, 182, 200);
+}
+input[type="submit"]:hover{
+    background:rgb(105, 196, 230);
+
+}
 .container.input{
     border:0;
     outline:none;
     color:black;
-
 }
-.search.wrap{
-    width:500px;
-    margin:30px auto;
-}
-
 header{
     width:100%;
     height:70px;
@@ -38,9 +67,8 @@ span{
 div.body-header {
         background-color:#e0e6ea;
         width: 47%;
+        position:relative;
 }
-
-
 ul{
 width:auto;
 float:right;
@@ -68,12 +96,8 @@ a{
     color:rgb(17, 17, 14);
     text-decoration:none;
     font-family: 'Nunito Sans', sans-serif;
-    font-size:1.2vw;
-    
+    font-size:1.2vw;  
 } 
-
-
-
 .footer-container{
     background-color: rgb(154, 182, 200);
     padding:0;
@@ -128,7 +152,6 @@ a{
     color:rgb(37, 39, 39);
     font-size: 0.8rem;
 }
-
 #footer-email-btn:hover {
     cursor: pointer;
     background-color: rgb(105, 196, 230);
