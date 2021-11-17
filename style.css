@@ -6,7 +6,13 @@ body{
     box-sizing: border-box;
     min-height:100vh; 
     background:#b7c4cc;
+    
 } 
+.background-img{
+    background-image:url(C:/Users/DELL/Downloads/smarthome.jpg);
+    background-size:cover;
+    background-position:center; 
+}
 .box{
     position:relative;
     margin-top:5px;  

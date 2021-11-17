@@ -1,11 +1,17 @@
-
+body{
+    background-color:#b7c4cc;
+    
+}
 
 div.blog-div{
     width:30%;
     float:left;
     margin:10px;
+
     
 }
 .blog-container{
     height:580px;
+    font-weight: bold;
+
 }
