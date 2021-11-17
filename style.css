@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family:"Alfa Slab One ",cursive;
+    font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
     min-height:100vh; 
 }
@@ -16,12 +16,22 @@ h1{
     float:left;
     margin-left:2%;
     margin-top:10px;
-    font-family:"Alfa Slab One ",cursive;
     color:black;
 }
 span{
     color:#ffffff;
 }
+
+div.body-header {
+        background-color:#E0eae3;
+        width: 47%;
+}
+
+div.body {
+
+        width: 47%;
+}
+
 ul{
 width:auto;
 float:right;
