@@ -1,7 +1,11 @@
-p{
-    display: flex;
-    flex-wrap: wrap;
-    margin:0;
-    text-align: left;
+
+
+div.blog-div{
+    width:30%;
+    float:left;
+    margin:10px;
     
+}
+.blog-container{
+    height:580px;
 }

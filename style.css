@@ -5,7 +5,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
     min-height:100vh; 
-    background:#Ebf0f3;
+    background:#b7c4cc;
 } 
 .container.input{
     border:0;
@@ -16,14 +16,12 @@ body{
 .search.wrap{
     width:500px;
     margin:30px auto;
-    
-
 }
 
 header{
     width:100%;
     height:70px;
-    background-color:burlywood;
+    background-color:rgb(75, 153, 184);
 }
 h1{
     position:absolute;
@@ -34,18 +32,14 @@ h1{
     color:black;
 }
 span{
-    color:#ffffff;
+    color:#14456d;
 }
 
 div.body-header {
-        background-color:#E0eae3;
+        background-color:#e0e6ea;
         width: 47%;
 }
 
-div.body {
-
-        width: 47%;
-}
 
 ul{
 width:auto;
@@ -56,17 +50,32 @@ li{
     display:inline-block;
     padding:15px 30px;
 }
+li a{
+    text-decoration: none;
+    color: rgb(57, 69, 80);
+    margin-bottom:0.5rem;  
+}
+li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+}
+li a:active{
+    color: rgb(14, 5, 90);
+}
 a{
     text-align:left;
     color:rgb(17, 17, 14);
     text-decoration:none;
-    font-family:"Alfa Slab One ",cursive;
+    font-family: 'Nunito Sans', sans-serif;
     font-size:1.2vw;
     
 } 
 
+
+
 .footer-container{
-    background-color: rgb(97, 89, 89);
+    background-color: rgb(154, 182, 200);
     padding:0;
     position:sticky;
     top:100%;
@@ -78,17 +87,17 @@ a{
     flex-wrap: wrap;
 }
 .footer-heading a:hover {
-    color: rgb(37, 39, 39);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
     transition: 0.3s ease-out;
 }
 
 .footer-container a:active {
-    background: rgb(235, 117, 134);
+    color: rgb(14, 5, 90);
 }
 .footer-heading a {
     text-decoration: none;
-    color: bisque;
+    color: rgb(57, 69, 80);
     margin-bottom:0.5rem;  
 }
 .footer-heading {
