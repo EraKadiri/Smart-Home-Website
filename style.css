@@ -8,6 +8,36 @@ body{
     background:#b7c4cc; 
 
 } 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 30px;
+    border: 1px solid rgb(63, 73, 161);
+  }
+  
+  td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+    border: 1px solid rgb(63, 73, 161);
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr a{
+    text-align:left;
+    color:rgb(58, 58, 49);
+    text-decoration:none;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  tr a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+  }
+
 .background-img{
     background-image:url(C:/Users/DELL/Downloads/smarthome.jpg);
     background-size:cover;
@@ -16,7 +46,7 @@ body{
 
 .body-container{
     height:580px;
-    margin-bottom: 800px;
+
 }
 .box{
     position:relative;
@@ -24,7 +54,7 @@ body{
     
 
 }
-div.box-2{
+#form-home{
     width:50%;
     position: relative;
     float:right;

@@ -6,6 +6,7 @@
 }
 .footer{
     margin:auto;
+    position:sticky;
     width:80%;
     display: flex;
     flex-wrap: wrap;
