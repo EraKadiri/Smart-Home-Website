@@ -1,0 +1,30 @@
+body{
+    background-color:#b7c4cc;
+    
+    
+
+}
+/* .image-container img{
+    width:20%;
+    margin:30px;
+
+
+
+    
+} */
+/* .image-container::after{
+    content:" ";
+    clear:both;
+    display:table;
+
+    
+} */
+
+.image-container{
+    width:30%;
+}
+
+
+
+    
+    
