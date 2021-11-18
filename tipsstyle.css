@@ -6,7 +6,7 @@ body{
     background-size:cover;
 }
 
-div.blog-div{
+div.tips-div{
     width:30%;
     float:left;
     margin:10px;
@@ -14,8 +14,9 @@ div.blog-div{
 
     
 }
-.blog-container{
+.tips-container{
     height:580px;
+    
     
 
 }

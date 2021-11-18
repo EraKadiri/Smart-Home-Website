@@ -1,7 +1,7 @@
 .footer-container{
     background-color: rgb(154, 182, 200);
-    padding-top:0;
     position:sticky;
+    padding-top:0;
     top:100%;
 }
 .footer{
@@ -9,13 +9,13 @@
     width:80%;
     display: flex;
     flex-wrap: wrap;
+
 }
 .footer-heading a:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     transition: 0.3s ease-out;
 }
-
 .footer-container a:active {
     color: rgb(14, 5, 90);
 }
