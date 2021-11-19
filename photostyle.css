@@ -20,11 +20,13 @@ body{
     
 } */
 
+*{
+    box-sizing:border-box;
+
+}
+
 .image-container{
     width:30%;
 }
-
-
-
     
     
