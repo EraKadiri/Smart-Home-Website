@@ -47,10 +47,10 @@ table {
     background-position:center; 
 }
 
-/* .body-container{
-    height:580px;
+ .container{
+    margin-bottom:200px;
 
-} */
+}  
 .box{
     position:relative;
     margin-top:5px;
@@ -63,7 +63,7 @@ table {
     float:right;
     text-align:right;
     margin-right: 40px;
-
+    
     
 
 }
