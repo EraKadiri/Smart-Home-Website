@@ -1,4 +1,3 @@
-
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +5,13 @@ body{
     box-sizing: border-box;
     min-height:100vh; 
     background:#b7c4cc; 
-
+    background-image:url(background/images.jpg);
+    image-orientation: 0.5;
+    background-repeat:no-repeat;
+    background-size:cover;   
+}
+p{
+    position:relative;
 } 
 table {
     border-collapse: collapse;
@@ -14,61 +19,45 @@ table {
     margin-bottom: 20px;
     border-spacing: 30px;
     border: 1px solid rgb(63, 73, 161);
-  }
-  
-  td, th {
+}
+td, th {
     border: 2px solid #dddddd;
     text-align: left;
     padding: 7px;
     border: 1px solid rgb(63, 73, 161);
-  }
-  
-  tr:nth-child(even) {
+}
+tr:nth-child(even) {
     background-color: rgb(154, 182, 200);
-  }
-  tr:nth-child(odd){
+}
+tr:nth-child(odd){
     background-color:rgb(75, 153, 184);
-  }
-  tr a{
+}
+tr a{
     text-align:left;
     color:rgb(58, 58, 49);
     text-decoration:none;
     font-family: 'Nunito Sans', sans-serif;
-  }
-  tr a:hover{
+}
+tr a:hover{
     color: rgb(0, 0, 0);
     text-decoration: underline;
     transition: 0.3s ease-out;
-  }
-  tr:hover {
-      background-color: rgb(224, 224, 207);
-      
-    }
-
+}
+tr:hover {
+    background-color: rgb(224, 224, 207); 
+}
 .background-img{
     background-image:url(C:/Users/DELL/Downloads/smarthome.jpg);
     background-size:cover;
     background-position:center; 
 }
-
- .container{
+.container{
     margin-bottom:200px;
-
 }  
 .box{
     position:relative;
     margin-top:5px;
-    
-
 }
-#form-home{
-    width:20%;
-    position: relative;
-    float:right;
-    text-align:right;
-    margin-right: 40px;
-}
-
 
 input{
     position:relative;
@@ -85,6 +74,7 @@ input{
     outline:none;
     padding: 0 25px;
     border-radius: 25px 0 0 25px;
+    margin-left:25px;
 }
 .box input[type="submit"]{
     position:relative;
@@ -99,7 +89,6 @@ input{
 }
 .box input[type="submit"]:hover{
     background:rgb(105, 196, 230);
-
 }
 .container.input{
     border:0;
@@ -122,28 +111,68 @@ h1{
 span{
     color:#14456d;
 }
-
 div.body-header  {
-        background-color:#e0e6ea;
         width: 50%;
         position:relative;
-        text-shadow: 2px 2px;
+        
 }
-
-.forms-div input[type="text"]{
+.body-header h1{
+    text-shadow: 2px 2px;
+}
+.body-header a{
+    background-color: rgb(123, 193, 221);
+    font-size:35px;
+    margin-left: 2%;
+    padding: 8px;
+}
+#form-home{
+    width:20%;
+    float:right;
+    padding: 5px;
+    text-align:right;
+    margin-right: 0px;
+    position: fixed;
+    bottom: 280px;
+    right: 0;
+    background-color:rgb(201, 213, 221);
+    border:2px lightslategray;
+    text-align: left;
+}
+#form-home input[type="text"]{
     position: relative;
-    height:20px;
-    border-radius: 25px 25px 25px
+    height:30px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+#form-home input[type="password"]{
+    position: relative;
+    height:30px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+#form-home input[type="submit"]{
+    position: relative;
+    height:25px;
+    border-radius: 5px 5px;
+    float:right;
+    background: whitesmoke;
+    border:none;
+    outline:none;
 }
 ul{
-width:auto;
-float:right;
-margin-top:8px;
+    width:auto;
+    float:right;
+    margin-top:8px;
 }
 header li{
     display:inline-block;
     padding:15px 30px;
 }
+
 li a{
     text-decoration: none;
     color: rgb(57, 69, 80);

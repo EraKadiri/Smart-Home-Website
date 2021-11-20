@@ -1,14 +1,8 @@
-body{
-    background-color:#b7c4cc;
-    background-image:url(C:/Users/DELL/Downloads/fototcameras/s.png);
-    image-orientation: 0.5;
-    background-repeat:no-repeat;
-    background-size:cover;
-}
 
 div.blog-div{
     width:30%;
     float:left;
     margin:10px;
-    background-color: white;
+    text-shadow: 2px 2px 5px white;
 }
+

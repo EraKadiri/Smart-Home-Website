@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footerstyle.css">
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EZ Living</title>
 
 </head>
 
 <header>
-    <h1><b>EZ</b><span> LIVING</span> </h1>
+    <a href="Index.html"><h1><b>EZ</b><span> LIVING</span></h1></a>
     <nav>
         <ul>
             <li ><a class="active" href="index.html">Home</a></li>
@@ -37,8 +39,13 @@
 
         <div class ="body-header">
             <h1>A Smart Home to simplify your life!</h1>
-        
         </div>
+        <br><br><br><br><br>
+        <div class ="body-header">
+             <a href="blog.html">Find More About Smart Homes</a> 
+           
+        </div>
+        
         
         <form id="form-home">
 
@@ -46,12 +53,13 @@
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname"> <br>
-            <p>
-            Gender:
-            </p>
+            <label for="gender">Gender:</label><br>
             <input type="radio" name = "gender"/> Male <br>
             <input type="radio" name = "gender"/> Female <br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br> <br>
             <input type="submit" value="Submit">
+
         </form> 
 
     </div>
