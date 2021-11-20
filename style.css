@@ -40,6 +40,10 @@ table {
     text-decoration: underline;
     transition: 0.3s ease-out;
   }
+  tr:hover {
+      background-color: rgb(224, 224, 207);
+      
+    }
 
 .background-img{
     background-image:url(C:/Users/DELL/Downloads/smarthome.jpg);
@@ -58,15 +62,14 @@ table {
 
 }
 #form-home{
-    width:50%;
+    width:20%;
     position: relative;
     float:right;
     text-align:right;
     margin-right: 40px;
-    
-    
-
 }
+
+
 input{
     position:relative;
     display:inline-block;
@@ -124,6 +127,7 @@ div.body-header  {
         background-color:#e0e6ea;
         width: 50%;
         position:relative;
+        text-shadow: 2px 2px;
 }
 
 .forms-div input[type="text"]{
