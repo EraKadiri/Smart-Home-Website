@@ -61,3 +61,6 @@
     background-color: rgb(105, 196, 230);
     transition: all 0.4s ease-out;
 }
+.text{
+    width:70%;
+} 

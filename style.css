@@ -47,7 +47,7 @@ tr:hover {
     background-color: rgb(224, 224, 207); 
 }
 .background-img{
-    background-image:url(C:/Users/DELL/Downloads/smarthome.jpg);
+    
     background-size:cover;
     background-position:center; 
 }
@@ -118,6 +118,7 @@ div.body-header  {
 }
 .body-header h1{
     text-shadow: 2px 2px;
+    
 }
 .body-header a{
     background-color: rgb(123, 193, 221);
@@ -193,5 +194,8 @@ a{
     font-family: 'Nunito Sans', sans-serif;
     font-size:1.2vw;  
 } 
+
+
+
 
 
