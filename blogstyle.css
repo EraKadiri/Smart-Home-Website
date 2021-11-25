@@ -4,5 +4,15 @@ div.blog-div{
     float:left;
     margin:10px;
     text-shadow: 2px 2px 5px white;
+    text-align: justify;
 }
+.mapouter{position:relative;
+    text-align:right;
+    height:372px;
+    width:535px;}
+        
+        .gmap_canvas {overflow:hidden;
+            background:none!important;
+            height:372px;width:535px;}
+
 

@@ -1,12 +1,12 @@
 .footer-container{
     background-color: rgb(154, 182, 200);
-    position:sticky;
+    /* position:sticky; */
     padding-top:0;
     top:100%;
 }
 .footer{
     margin:auto;
-    position:sticky;
+    /* position:sticky; */
     width:80%;
     display: flex;
     flex-wrap: wrap;
@@ -61,10 +61,4 @@
     background-color: rgb(105, 196, 230);
     transition: all 0.4s ease-out;
 }
-.text{
-    width:70%;
-} 
-.paragraph{
-    width:80%;
 
-}

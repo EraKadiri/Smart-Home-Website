@@ -10,9 +10,24 @@ body{
     background-repeat:no-repeat;
     background-size:cover;   
 }
+dl{
+    margin: 30px;
+    background-color: #d0dcec;
+    opacity: 0.6;
+
+}
+dt{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+dd{
+    margin-bottom: 10px;
+}
 p{
-    position:relative;
-} 
+    width:80%;
+    text-align: justify;
+    margin-bottom: 50px;
+}
 table {
     border-collapse: collapse;
     width: 100%;
@@ -53,6 +68,8 @@ tr:hover {
 }
 .container{
     margin-bottom:200px;
+    padding-left:30px;
+    line-height: 1.5em;
 }  
 .box{
     position:relative;
@@ -62,7 +79,7 @@ tr:hover {
 input{
     position:relative;
     display:inline-block;
-    font-size:20px;
+    font-size:15px;
     box-sizing:border-box;
     transition: .5s; 
 }
@@ -90,6 +107,7 @@ input{
 .box input[type="submit"]:hover{
     background:rgb(105, 196, 230);
 }
+
 .container.input{
     border:0;
     outline:none;
@@ -126,22 +144,34 @@ div.body-header  {
     margin-left: 2%;
     padding: 8px;
 }
+.body-header [href]{
+    border-radius: 4px;
+}
 #form-home{
-    width:20%;
+    width:15%;
     float:right;
     padding: 5px;
     text-align:right;
     margin-right: 0px;
     position: fixed;
-    bottom: 280px;
+    bottom: 250px;
     right: 0;
     background-color:rgb(201, 213, 221);
     border:2px lightslategray;
     text-align: left;
+    line-height: 1em;
 }
 #form-home input[type="text"]{
     position: relative;
-    height:30px;
+    height:20px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+#form-home input[type="email"]{
+    position: relative;
+    height:20px;
     border-radius: 10px 10px;
     background: whitesmoke;
     border:none;
@@ -149,7 +179,7 @@ div.body-header  {
 }
 #form-home input[type="password"]{
     position: relative;
-    height:30px;
+    height:20px;
     border-radius: 10px 10px;
     background: whitesmoke;
     border:none;
@@ -157,13 +187,21 @@ div.body-header  {
 }
 #form-home input[type="submit"]{
     position: relative;
-    height:25px;
+    height:20px;
     border-radius: 5px 5px;
     float:right;
     background: whitesmoke;
     border:none;
     outline:none;
 }
+#form-home input[type="submit"]:hover{
+    background-color: rgb(50, 96, 156);
+    transition: 0.3s ease-out;
+}
+/* img.content{
+    width:70%;
+    align-content: center;
+} */
 ul{
     width:auto;
     float:right;
