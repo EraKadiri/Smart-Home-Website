@@ -1,5 +1,5 @@
 .footer-container{
-    background-color: rgb(154, 182, 200);
+    background-color: #8c52ff;
     /* position:sticky; */
     padding-top:0;
     top:100%;
@@ -22,7 +22,7 @@
 }
 .footer-heading a {
     text-decoration: none;
-    color: rgb(57, 69, 80);
+    color: white;
     margin-bottom:0.5rem;  
 }
 .footer-heading {

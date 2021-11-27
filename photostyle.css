@@ -1,24 +1,44 @@
-body{
-    height:fit-content;
+.cameras-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
-.gallery {
-    display: grid;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    grid-template-columns: 50% 50% 50% 50%;
-    grid-auto-rows: 33%;
-  }
-  .gallery img {
-    margin-top: 10px;
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 16px #333;
-    transition: all 0.5s ease;
-  }
-  .gallery img:hover {
-    box-shadow: 0 0 32px #333;
-  }
-  .gallery .content {
-    padding: 4px;
-  }
+.gallery-first-row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gallery-second-row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gallery-third-row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cameras-container .content{
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0 0 16px #333;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cameras-container img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+.cameras-container .content:hover {
+  box-shadow: 0 0 32px #333;
+}

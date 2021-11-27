@@ -8,13 +8,22 @@ body{
     background-image:url(background/images.jpg);
     image-orientation: 0.5;
     background-repeat:no-repeat;
-    background-size:cover;   
+    background-size:cover;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#logo{
+    max-height: 100%;
+}
+
 dl{
-    margin: 30px;
+    max-width: 80%;
+    padding: 10px;
     background-color: #d0dcec;
     opacity: 0.6;
-
 }
 dt{
     font-size: 20px;
@@ -67,13 +76,16 @@ tr:hover {
     background-position:center; 
 }
 .container{
+    margin-top: 100px;
     margin-bottom:200px;
     padding-left:30px;
     line-height: 1.5em;
 }  
 .box{
     position:relative;
-    margin-top:5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 input{
@@ -85,11 +97,11 @@ input{
 }
 .box input[type="text"]{
     background: whitesmoke;
-    width:340px;
-    height: 35px;
+    max-width: 200px;
     border:none;
     outline:none;
     padding: 0 25px;
+    height: 25px;
     border-radius: 25px 0 0 25px;
     margin-left:25px;
 }
@@ -97,8 +109,7 @@ input{
     position:relative;
     border-radius: 0 25px 25px 0;
     left:-5px;
-    height:35px;
-    width:150px;
+    height: 25px;
     border:none;
     outline:none;
     cursor:pointer;
@@ -113,17 +124,21 @@ input{
     outline:none;
     color:black;
 }
-header{
+header {
     width:100%;
     height:70px;
-    background-color:rgb(75, 153, 184);
+    background-color: #8c52ff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 100px;
+    top: 0;
 }
-h1{
-    position:absolute;
+
+h1{ 
     padding:3px;
-    float:left;
-    margin-left:2%;
-    margin-top:10px;
+    margin-top:30px;
     color:black;
 }
 span{
@@ -139,47 +154,58 @@ div.body-header  {
     
 }
 .body-header a{
-    background-color: rgb(123, 193, 221);
+    background-color: #8c52ff;
     font-size:35px;
-    margin-left: 2%;
     padding: 8px;
+    color: white;
 }
 .body-header [href]{
     border-radius: 4px;
 }
+
+.main-content{
+    max-width: 90%;
+}
+
 #form-home{
-    width:15%;
-    float:right;
+    width: 20%;
+    float: right;
     padding: 5px;
-    text-align:right;
+    text-align: right;
     margin-right: 0px;
+    margin-top: 50px;
     position: fixed;
-    bottom: 250px;
+    bottom: 180px;
     right: 0;
-    background-color:rgb(201, 213, 221);
-    border:2px lightslategray;
+    background-color: #8c52ff;
+    border: 2px lightslategray;
+    font-family: inherit;
+    border-radius: 10px;
     text-align: left;
-    line-height: 1em;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    z-index: 1;
 }
 #form-home input[type="text"]{
     position: relative;
-    height:20px;
+    height:30px;
     border-radius: 10px 10px;
     background: whitesmoke;
     border:none;
     outline:none;
 }
+
 #form-home input[type="email"]{
     position: relative;
-    height:20px;
+    height:30px;
     border-radius: 10px 10px;
     background: whitesmoke;
     border:none;
     outline:none;
 }
+
 #form-home input[type="password"]{
     position: relative;
-    height:20px;
+    height:30px;
     border-radius: 10px 10px;
     background: whitesmoke;
     border:none;
@@ -187,26 +213,25 @@ div.body-header  {
 }
 #form-home input[type="submit"]{
     position: relative;
-    height:20px;
+    height:25px;
     border-radius: 5px 5px;
-    float:right;
+    float:left;
     background: whitesmoke;
     border:none;
     outline:none;
 }
-#form-home input[type="submit"]:hover{
-    background-color: rgb(50, 96, 156);
-    transition: 0.3s ease-out;
-}
+
 /* img.content{
     width:70%;
     align-content: center;
 } */
-ul{
+header ul{
     width:auto;
     float:right;
+    display: flex;
     margin-top:8px;
 }
+
 header li{
     display:inline-block;
     padding:15px 30px;
@@ -214,7 +239,7 @@ header li{
 
 li a{
     text-decoration: none;
-    color: rgb(57, 69, 80);
+    color: white;
     margin-bottom:0.5rem;  
 }
 li a:hover{
