@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 dl{
     max-width: 80%;
     padding: 10px;
-    background-color: #d0dcec;
+    background-color:#d9d2e9;
     opacity: 0.6;
 }
 dt{
@@ -42,19 +42,19 @@ table {
     width: 100%;
     margin-bottom: 20px;
     border-spacing: 30px;
-    border: 1px solid rgb(63, 73, 161);
+    border: 1px solid #351c75;
 }
 td, th {
     border: 2px solid #dddddd;
     text-align: left;
     padding: 7px;
-    border: 1px solid rgb(63, 73, 161);
+    border: 1px solid #351c75 ;
 }
 tr:nth-child(even) {
-    background-color: rgb(154, 182, 200);
+    background-color: #b4a7d6;
 }
 tr:nth-child(odd){
-    background-color:rgb(75, 153, 184);
+    background-color:#8e7cc3;
 }
 tr a{
     text-align:left;
@@ -68,7 +68,7 @@ tr a:hover{
     transition: 0.3s ease-out;
 }
 tr:hover {
-    background-color: rgb(224, 224, 207); 
+    background-color: #d9d2e9; 
 }
 .background-img{
     
@@ -127,7 +127,7 @@ input{
 header {
     width:100%;
     height:70px;
-    background-color: #8c52ff;
+    background-color:#8c52ff;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -154,7 +154,7 @@ div.body-header  {
     
 }
 .body-header a{
-    background-color: #8c52ff;
+    background-color:#8c52ff;
     font-size:35px;
     padding: 8px;
     color: white;
@@ -177,7 +177,7 @@ div.body-header  {
     position: fixed;
     bottom: 180px;
     right: 0;
-    background-color: #8c52ff;
+    background-color:#8c52ff;
     border: 2px lightslategray;
     font-family: inherit;
     border-radius: 10px;
