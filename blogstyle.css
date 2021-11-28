@@ -1,18 +1,70 @@
-
 div.blog-div{
     width:30%;
     float:left;
-    margin:10px;
+    margin:20px;
     text-shadow: 2px 2px 5px white;
     text-align: justify;
 }
-.mapouter{position:relative;
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 30px;
+    border: 1px solid #351c75;
+}
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #351c75 ;
+}
+tr:nth-child(even) {
+    background-color: #b4a7d6;
+}
+tr:nth-child(odd){
+    background-color:#8e7cc3;
+}
+tr a{
+    text-align:left;
+    color:rgb(58, 58, 49);
+    text-decoration:none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+tr a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+}
+tr:hover {
+    background-color: #d9d2e9; 
+}
+.background-img{
+    
+    background-size:cover;
+    background-position:center; 
+}
+
+.blog-table{
+    
+    width: 95%;
+    /* margin:10px; */
+}
+
+.mapouter{
+    position:relative;
+    margin: 30px;
     text-align:right;
-    height:372px;
-    width:535px;}
+    height:400px;
+    width:95%;}
         
-        .gmap_canvas {overflow:hidden;
-            background:none!important;
-            height:372px;width:535px;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    text-align: right;
+    height:372px;
+    width:90%;}
 
-
+    .mapouter h3{
+        text-align: center;
+    }
