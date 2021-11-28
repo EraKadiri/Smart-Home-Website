@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
 
 #logo{
     max-height: 100%;
+    
 }
 
 dl{
@@ -113,10 +114,10 @@ input{
     border:none;
     outline:none;
     cursor:pointer;
-    background:rgb(154, 182, 200);
+    background-color: #b4a7d6;
 }
 .box input[type="submit"]:hover{
-    background:rgb(105, 196, 230);
+    background:#8e7cc3;
 }
 
 .container.input{
@@ -203,6 +204,7 @@ div.body-header  {
     outline:none;
 }
 
+
 #form-home input[type="password"]{
     position: relative;
     height:30px;
@@ -220,6 +222,13 @@ div.body-header  {
     border:none;
     outline:none;
 }
+#form-home input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:#b4a7d6 ;
+    transition: all 0.4s ease-out;
+}
+
+
 
 /* img.content{
     width:70%;
