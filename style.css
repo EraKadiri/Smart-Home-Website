@@ -5,11 +5,8 @@ body{
     box-sizing: border-box;
     min-height:100vh; 
     background:#b7c4cc; 
-    background-image:url(background/images.jpg);
-    image-orientation: 0.5;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+   
+    
 }
 
 body::-webkit-scrollbar {
@@ -47,7 +44,7 @@ p{
 
 .container{
     margin-top: 70px;
-    /* margin-bottom:200px; */
+     margin-bottom:200px; 
     /* padding-left:30px; */
     line-height: 1.5em;
     color: white;
@@ -148,6 +145,13 @@ div.body-header  {
 #main-paragraph{
     line-height: 25px;
     padding-left: 20px;
+}
+.sub-content{
+    display: flex;
+    float:right;
+
+
+    
 }
 
 #form-home{

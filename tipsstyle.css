@@ -3,12 +3,23 @@ div.tips-div{
     width:30%;
     float:left;
     margin:10px;
+    color:black;
+}
+body{
+    background-color: white;
 }
 
 #border-img { 
     border: 10px solid transparent;
     padding: 15px;
-    border-image: url(border.png) 30 round;
+    border-image: url(border2.jpg) 30 round;
+    color:black;
+    /* border: 15px solid transparent;
+  padding: 15px;
+  border-image-source: url(border.png);
+  border-image-repeat: stretch;  
+  border-image-slice: 30; */
+
   }
 
 .container{
