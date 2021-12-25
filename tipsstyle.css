@@ -5,6 +5,13 @@ div.tips-div{
     margin:10px;
 }
 
+#border-img { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;
+  }
+
 .container{
     height:580px;
+    padding-right: 20px;
 }

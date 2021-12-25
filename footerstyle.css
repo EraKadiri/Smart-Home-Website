@@ -1,8 +1,9 @@
 .footer-container{
-    background-color: #8e7cc3;
-    /* position:sticky; */
+    background-color: #1c4a57;
     padding-top:0;
     top:100%;
+    
+    
 }
 .footer{
     margin:auto;
@@ -13,17 +14,18 @@
 
 }
 .footer-heading a:hover {
-    color: rgb(0, 0, 0);
+    color: #0c2b33;
     text-decoration: underline;
     transition: 0.3s ease-out;
 }
 .footer-container a:active {
-    color: rgb(14, 5, 90);
+    color: black;
 }
 .footer-heading a {
     text-decoration: none;
     color: white;
-    margin-bottom:0.5rem;  
+    margin-bottom:0.5rem;
+      
 }
 .footer-heading {
     display: flex;
@@ -32,6 +34,8 @@
 }
 .footer-heading h4{
     margin-bottom:1rem;
+    text-transform: uppercase;
+    color:white;
 }
 .fa:hover {
     opacity: 1.0;
@@ -50,15 +54,15 @@
     width: 60px;
     height: 20px;
     border-radius: 4px;
-    background-color:snow;
+    background-color:#c8d8e4;
     outline: none;
     border: none;
-    color:rgb(37, 39, 39);
+    color:black;
     font-size: 0.8rem;
 }
 #footer-email-btn:hover {
     cursor: pointer;
-    background-color:#b4a7d6 ;
+    background-color:#0c2b33 ;
     transition: all 0.4s ease-out;
 }
 

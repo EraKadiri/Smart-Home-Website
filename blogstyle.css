@@ -1,3 +1,10 @@
+#container{
+    background-image: url(images.jpg), url(happybg.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+  }
+
 div.blog-div{
     width:30%;
     float:left;
