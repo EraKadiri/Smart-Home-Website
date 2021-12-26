@@ -58,9 +58,9 @@ p{
     align-items: center;
     
 }
-form.box:hover{
+/* form.box:hover{
     background-color: white;
-}
+} */
 
 
 input{
@@ -92,6 +92,7 @@ input{
 }
 .box input[type="submit"]:hover{
     background:#0c2b33;
+    color:white;
 }
 
 .container.input{
@@ -132,11 +133,11 @@ header ul{
 header li{
     display:inline-block;
     padding:15px 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 header li:hover{
-    background-color: #dfe9f0;
+    background-color: #edf5fc;
     border-radius: 30px; 
     
 }
@@ -164,6 +165,25 @@ a{
 } 
 
 
+.goBack input[type="button"]{
+    position:relative;
+    display:flex;
+    float: left;
+    bottom:0px;
+    border-radius: 4px; 
+    margin-left: 20px;
+    background-color:#f2f2f2;
+    font-size:15px;
+    padding: 5px;
+    color: black;
+    transition: 1s;
+    
+}
+
+.goBack input[type="button"]:hover{
+    background-color: #0c2b33;
+    color:white;
+}
 
 
 

@@ -1,5 +1,5 @@
 .footer-container{
-    background-color: #1c4a57;
+    background-color: #14333b;
     padding-top:0;
     top:100%;
     
@@ -49,6 +49,9 @@
     padding-left: 0.5rem;
     font-size:1rem;
     margin-bottom: 0.2rem;
+}
+.footer-email-form h4{
+text-transform: uppercase;
 }
 #footer-email-btn {
     width: 60px;

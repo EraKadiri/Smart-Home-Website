@@ -102,7 +102,7 @@
     border:none;
     outline:none;
 }
-#form-home input[type="submit"]{
+ #form-home input[type="submit"]{
     position: relative;
     height:25px;
     border-radius: 5px 5px;
@@ -110,9 +110,10 @@
     background: whitesmoke;
     border:none;
     outline:none;
-}
+} 
 #form-home input[type="submit"]:hover {
     cursor: pointer;
-    background-color:#b4a7d6 ;
+    background-color:#2b6777 ;
+    color:white;
     transition: all 0.4s ease-out;
 }
