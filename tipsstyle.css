@@ -20,4 +20,9 @@ body{
     height:580px;
     padding-right: 20px;
 }
-
+video{
+    width:75%;
+      
+        margin-left: 40px;
+        margin-right: 40px;
+}

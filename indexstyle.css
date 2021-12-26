@@ -7,13 +7,13 @@
     line-height: 30px;
 }
 
-.body-header a{
+ .body-header a{
     background-color:#f2f2f2;
     font-size:25px;
     padding: 8px;
     color: black;
     transition: 1s;
-}
+} 
 .body-header a:hover{
     background-color: #0c2b33;
     color:white;

@@ -109,7 +109,7 @@ header {
     z-index: 1;
     margin-bottom: 100px;
     top: 0;
-    box-shadow: 10px 0px 20px grey;
+     box-shadow: 10px 0px 20px grey; 
     
 }
 
@@ -131,13 +131,14 @@ header ul{
 
 header li{
     display:inline-block;
-    padding:15px 30px;
+    padding:15px 20px;
     transition: 2s;
 }
 
 header li:hover{
     background-color: #dfe9f0;
-    border-radius: 30px;
+    border-radius: 30px; 
+    
 }
 
 

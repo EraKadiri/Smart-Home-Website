@@ -77,3 +77,16 @@ tr:hover {
     .mapouter h3{
         text-align: center;
     }
+     /* .wrapper{
+        margin: 0 auto;
+        width:1000px;
+
+    } */
+
+    video{
+        width:75%;
+      
+        margin-left: 40px;
+        margin-right: 40px;
+    
+    }

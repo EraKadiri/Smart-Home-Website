@@ -35,6 +35,7 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #c8d8e4 74%);
 .cameras-container img {
   width: 70%;
   height: 80%;
+  
 }
 .cameras-container .content:hover {
   box-shadow: 0 0 32px #333;
