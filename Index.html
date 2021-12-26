@@ -15,6 +15,8 @@
     <title>EZ Living</title>
 
     <script>
+     
+ 
         function setCookie(cname,cvalue,exdays) {
           const d = new Date();
           d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -91,9 +93,12 @@
            
             
             <div>
-            
+           <article>
+
                 <h3>Smart websites bring the intuition and fluidity of 
                     mobile apps to the Internet.</h3>
+                  </article>
+                  <article>
                  <p id = "main-paragraph">
                     Using modern technologies in witty ways, <mark>these sites boost engagement,</mark>
                     breed affinity, prompt users to return, drive conversion, and encourage social sharing.
@@ -108,6 +113,7 @@
                     and adjusting irrigation based on the weather. 
                    
                  </p>
+                </article>
             <br>
             <br>
     
@@ -161,8 +167,41 @@
             <input type="submit" value="Submit">
             
         </form> 
+        <form >
+          <label for="category">Choose what are you interested on  from the list:</label>
+          <input list="Categories" name="category" id="category">
+          <datalist id="Categories">
+            <option value="Cameras">
+            <option value="Phones">
+            <option value="Sirens">
+            <option value="Remotes">
+            <option value="Thermostats">
+          </datalist>
+          <input type="submit">
+        </form>
+        <!-- <form action="/action_page.php" method="get">
+          Username: <input type="text" name="usr_name">
+          Encryption: <keygen name="security">
+          <input type="submit">
+        </form> -->
+        <!-- <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" id="a" value="50">
+          +<input type="number" id="b" value="25">
+          =<output name="x" for="a b"></output>
+          </form> -->
+        
+        
 
     </div>
+    <div class="audio">
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        
+      </audio>
+    
+    </div>
+      
+    
 
 </body>
 <footer class="footer-container">
@@ -199,6 +238,8 @@
              <p style= "color:white; text-align: left;">Subscribe to our blog for daily <br> updates and new features!</p>
              <input type="email" placeholder="enter your email address" id="footer-email"> <br>
              <input type="Submit" value="Sign Up" id="footer-email-btn">
+             
+
          </div>
     </div>
 </footer>

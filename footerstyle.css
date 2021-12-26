@@ -3,14 +3,20 @@
     padding-top:0;
     top:100%;
     
+
+    
     
 }
 .footer{
     margin:auto;
-    /* position:sticky; */
+     /* position:sticky; */
     width:80%;
     display: flex;
     flex-wrap: wrap;
+    
+
+
+    
 
 }
 .footer-heading a:hover {

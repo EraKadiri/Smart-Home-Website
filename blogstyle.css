@@ -13,6 +13,8 @@ div.blog-div{
     text-shadow: 2px 2px 5px black;
     text-align: justify;
     color:black;
+    
+
 }
 table {
     border-collapse: collapse;
@@ -64,14 +66,14 @@ tr:hover {
     position:relative;
     margin: 30px;
     text-align:right;
-    height:400px;
+    height:500px;
     width:95%;}
         
 .gmap_canvas {
     overflow:hidden;
     background:none!important;
     text-align: right;
-    height:372px;
+    height:400px;
     width:90%;}
 
     .mapouter h3{
