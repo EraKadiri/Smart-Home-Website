@@ -6,24 +6,16 @@
   margin-top: 70px;
   font-family: "Sofia", sans-serif;
   background-color: #f0ecfc;
-background-image: linear-gradient(315deg, #f0ecfc 0%, #b2a8d1 74%);
-
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c8d8e4 74%);
 }
 
-.gallery-first-row{
+.gallery-row{
   display: flex;
   justify-content: flex-start;
 }
 
-.gallery-second-row{
-  display: flex;
-  justify-content: flex-start;
-}
 
-.gallery-third-row{
-  display: flex;
-  justify-content: flex-start;
-}
+
 
 .cameras-container .content{
   width: 400px;
@@ -41,10 +33,12 @@ background-image: linear-gradient(315deg, #f0ecfc 0%, #b2a8d1 74%);
 }
 
 .cameras-container img {
-  width: 350px;
-  height: 350px;
-  object-fit: contain;
+  width: 70%;
+  height: 80%;
 }
 .cameras-container .content:hover {
   box-shadow: 0 0 32px #333;
+}
+.cameras-container .content:after{
+  content:attr(data-text);
 }

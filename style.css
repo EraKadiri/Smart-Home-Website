@@ -4,9 +4,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
     min-height:100vh; 
-    background:#b7c4cc; 
-   
-    
+    background:#b7c4cc;     
 }
 
 body::-webkit-scrollbar {
@@ -15,8 +13,9 @@ body::-webkit-scrollbar {
 
 #logo{
     max-height: 100%;
-    
+   
 }
+
 
 dl{
     max-width: 80%;
@@ -26,6 +25,7 @@ dl{
     opacity: 0.6;
     outline-style: dotted;
     outline-width: thin;
+    margin-bottom: 20px;
     
 }
 dt{
@@ -56,7 +56,12 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
+form.box:hover{
+    background-color: white;
+}
+
 
 input{
     position:relative;
@@ -104,124 +109,18 @@ header {
     z-index: 1;
     margin-bottom: 100px;
     top: 0;
+    box-shadow: 10px 0px 20px grey;
+    
 }
+
 
 h1{ 
     padding:3px;
     margin-top:30px;
     
 }
-span{
-    color:#43305c;
-    font-size:smaller;
-}
-div.body-header  {
-        width: 60%;
-        position:relative;
+
         
-}
-.body-header h1{
-    text-shadow: 2px 2px;
-    line-height: 30px;
-    
-}
-.body-header a{
-    background-color:#f2f2f2;
-    font-size:25px;
-    padding: 8px;
-    color: black;
-}
-.body-header [href]{
-    border-radius: 4px;
-}
-
-.main-content{
-    max-width: 50%;
-    background-color: #2b6777;
-    padding: 10px;
-    padding-left: 20px;
-    margin-bottom: 0%; 
-}
-#main-paragraph{
-    line-height: 25px;
-    padding-left: 20px;
-}
-.sub-content{
-    display: flex;
-    float:right;
-
-
-    
-}
-
-#form-home{
-    width: 2%;
-    height:4%;
-    float: right;
-    padding: 5px;
-    text-align: right;
-    margin-right: 0px;
-    margin-top: 50px;
-    position: fixed;
-    bottom: 180px;
-    right: 0;
-    background-color:#52ab98;
-    border: 2px lightslategray;
-    font-family: inherit;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    z-index: 1;
-    transition: all 2s ease-in-out; 
-}
-#form-home:hover{
-    width:15%;
-    height:max-content;
-}
-#form-home input[type="text"]{
-    position: relative;
-    height:30px;
-    border-radius: 10px 10px;
-    background: whitesmoke;
-    border:none;
-    outline:none;
-}
-
-#form-home input[type="email"]{
-    position: relative;
-    height:30px;
-    border-radius: 10px 10px;
-    background: whitesmoke;
-    border:none;
-    outline:none;
-}
-
-
-#form-home input[type="password"]{
-    position: relative;
-    height:30px;
-    border-radius: 10px 10px;
-    background: whitesmoke;
-    border:none;
-    outline:none;
-}
-#form-home input[type="submit"]{
-    position: relative;
-    height:25px;
-    border-radius: 5px 5px;
-    float:left;
-    background: whitesmoke;
-    border:none;
-    outline:none;
-}
-#form-home input[type="submit"]:hover {
-    cursor: pointer;
-    background-color:#b4a7d6 ;
-    transition: all 0.4s ease-out;
-}
-
-
-
 
 header ul{
     width:auto;
@@ -233,7 +132,14 @@ header ul{
 header li{
     display:inline-block;
     padding:15px 30px;
+    transition: 2s;
 }
+
+header li:hover{
+    background-color: #dfe9f0;
+    border-radius: 30px;
+}
+
 
 li a{
     text-decoration: none;

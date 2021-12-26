@@ -14,15 +14,10 @@ body{
     padding: 15px;
     border-image: url(border2.jpg) 30 round;
     color:black;
-    /* border: 15px solid transparent;
-  padding: 15px;
-  border-image-source: url(border.png);
-  border-image-repeat: stretch;  
-  border-image-slice: 30; */
-
   }
 
 .container{
     height:580px;
     padding-right: 20px;
 }
+

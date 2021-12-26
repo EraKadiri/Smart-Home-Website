@@ -1,0 +1,118 @@
+.body-header{
+    text-align: center;
+}
+
+.body-header h1{
+    font-style: italic;
+    line-height: 30px;
+}
+
+.body-header a{
+    background-color:#f2f2f2;
+    font-size:25px;
+    padding: 8px;
+    color: black;
+    transition: 1s;
+}
+.body-header a:hover{
+    background-color: #0c2b33;
+    color:white;
+}
+.body-header [href]{
+    border-radius: 4px;  
+}
+
+
+.main-content{
+    max-width: 50%;
+    background-color: #2b6777;
+    padding-top:10px;
+    /* padding-left: 20px; */
+    margin-bottom: 0%; 
+}
+#main-paragraph{
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+.gallery-item img{
+      display: block; 
+      padding-left: 0%;
+  margin-left: auto;
+  margin-right: auto; 
+   width: 80%; 
+   opacity:0.7;
+}
+.sub-content{
+    /* display: flex; */
+    float:left;
+    width:50%;
+}
+
+#form-home{
+    width: 1%;
+    height:10%;
+    float: right;
+    padding: 5px;
+    text-align: right;
+    margin-right: 0px;
+    margin-top: 50px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background-color:#52ab98;
+    border: 2px lightslategray;
+    font-family: inherit;
+    border-radius: 10px 0px 0px 10px;
+    text-align: left;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    z-index: 1;
+    transition: all 2s ease-in-out; 
+    overflow: hidden;
+}
+#form-home:hover{
+    width:15%;
+    height:50%;
+}
+#form-home input[type="text"]{
+    position: relative;
+    height:30px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+
+#form-home input[type="email"]{
+    position: relative;
+    height:30px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+
+
+#form-home input[type="password"]{
+    position: relative;
+    height:30px;
+    border-radius: 10px 10px;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+#form-home input[type="submit"]{
+    position: relative;
+    height:25px;
+    border-radius: 5px 5px;
+    float:left;
+    background: whitesmoke;
+    border:none;
+    outline:none;
+}
+#form-home input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:#b4a7d6 ;
+    transition: all 0.4s ease-out;
+}
