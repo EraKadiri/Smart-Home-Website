@@ -19,6 +19,7 @@ div.blog-div{
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-left: 40px;
     margin-bottom: 20px;
     border-spacing: 30px;
     border: 1px solid #1c373f;
@@ -86,8 +87,8 @@ tr:hover {
     } */
     video{
         width:75%;
-        
-        margin-left: 100px;
+        margin-top: 100px;
+        margin-left: 150px;
         margin-right: 40px;
     
     }

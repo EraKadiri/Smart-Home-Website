@@ -2,22 +2,13 @@
     background-color: #14333b;
     padding-top:0;
     top:100%;
-    
-
-    
-    
 }
 .footer{
-    margin:auto;
-     /* position:sticky; */
-    width:80%;
+    padding: 0 100px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
-
-
-    
-
+    background-color: #14333b;
 }
 .footer-heading a:hover {
     color: #0c2b33;

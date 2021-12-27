@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amusement</title>
-    <link rel="stylesheet" href="amusement.css">
-    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="amusement.css">
     <link rel="stylesheet" href="footerstyle.css">
     <style>
   canvas {
-        border:1px solid #d3d3d3;
+        border:2px solid #646060;
         background-color: #f1f1f1;
+        position:relative;
     }
     
     </style>
-  
+    <script src="amusement.js"></script>
 
 </head>
 <body onload="startGame()">
@@ -41,6 +41,7 @@
               </ul>
           </nav>
       </header>
+      <div class="amusement-container">
       <script>
 
         var myGamePiece;
@@ -57,15 +58,18 @@
         var myGameArea = {
             canvas : document.createElement("canvas"),
             start : function() {
-                this.canvas.width = 480;
-                this.canvas.height = 270;
+                this.canvas.width = 800;
+                this.canvas.height = 300;
+                this.canvas.style.marginTop = "100px";
+                this.canvas.style.marginLeft = "200px";
                 this.context = this.canvas.getContext("2d");
                 document.body.insertBefore(this.canvas, document.body.childNodes[0]);
                 this.frameNo = 0;
                 this.interval = setInterval(updateGameArea, 20);
                 },
             clear : function() {
-                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height, this.canvas.marginTop,
+                this.canvas.marginLeft);
             }
         }
         
@@ -161,19 +165,100 @@
         }
         </script>
         <br>
-        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-        <p>Use the ACCELERATE button to stay in the air</p>
-        <p>How long can you stay alive?</p>
-        <div class="audio-two">
+        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" style="margin-left: 200px;">ACCELERATE</button>
+          <p style="margin-left: 200px;">Use the ACCELERATE button to stay in the air</p>
+          <p style="margin-left: 200px;">How long can you stay alive?</p>
+        
+          <p id = "line"></p> <!--???????-->
+        
+          <div class = "card-container">
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me</p>
+              </div>
+              <div class = "side back"> you flipped me</div>
+            </div>
+          </div>
+
+          <div class="audio-two">
+          
             <audio controls>
               <source src="audio2.mp3" type="audio/mp3">
-              
             </audio>
+            
+        </div>
+
+        </div>
           
-          </div>
     
 </body>
-<footer class="footer-container">
+<footer class="footer-container-amusement">
     <div class="footer">
         <div class="footer-heading footer-1">
            <h4 style= "color:white"> order informations</h4>

@@ -1,0 +1,61 @@
+.amusement-container{
+    margin-bottom: 200px;
+    
+}
+p{
+    margin:20px;
+}
+
+.footer-container-amusement{
+    background-color: #14333b;
+    padding-top: 0;
+    /* top:100%; */
+    margin-bottom: 0px;
+    position:absolute;
+    width:100%;
+}
+
+ .card-container{
+    cursor:pointer;
+    margin-top:50px;
+    margin-left:120px;
+    height: 200px;
+    perspective: 600;
+    position: relative;
+    width: 80%;
+} 
+
+.card{
+    
+    height: 100%;
+    margin: 10px;
+    position: relative;
+    float:left;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+     width: 23%; 
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card .side {
+    background: #eaeaed;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg); 
+  }
+ 
+.audio-two{
+    margin:20px;
+
+}

@@ -25,9 +25,9 @@
 
 .main-content{
     max-width: 50%;
+    float:left;
     background-color: #2b6777;
     padding-top:10px;
-    /* padding-left: 20px; */
     margin-bottom: 0%; 
 }
 #main-paragraph{
@@ -45,9 +45,42 @@
    opacity:0.7;
 }
 .sub-content{
-    /* display: flex; */
     float:left;
     width:50%;
+    margin-bottom: 20px;
+}
+.sub-content img{
+    width:100%;
+}
+.datalist{
+    height:200px;
+    background-color: #f2f2f2;
+    color:black;
+    padding: 20px;
+}
+.datalist input[type = "submit"]{
+    position: relative;
+    height:30px;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    background: whitesmoke;
+    border:2px solid #52ab98;
+    outline:none;
+}
+
+.datalist input[type = "submit"]:hover{
+    background-color: #52ab98;
+    color: white;
+}
+
+#category{
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #78c0b0;
+}
+
+.audio{
+    padding-top:20px;
 }
 
 #form-home{
@@ -116,8 +149,4 @@
     background-color:#2b6777 ;
     color:white;
     transition: all 0.4s ease-out;
-}
-#datalist{
-    
-    
 }

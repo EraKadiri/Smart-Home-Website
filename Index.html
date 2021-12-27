@@ -15,7 +15,8 @@
     <title>EZ Living</title>
 
     <script>
-     
+       const time = new Date();
+       document.getElementById("test").innerHTML = time;
  
         function setCookie(cname,cvalue,exdays) {
           const d = new Date();
@@ -128,10 +129,8 @@
                     <div class="content">
                       <img src="fotothomecontrol\giphy.gif" alt="giphy"  />
                     </div>
-                  </div> 
             
-            
-    <br> <br>
+     <br> <br>
             
                 <p id = "main-paragraph">
                     And while it might sound like just another passing fad to some, the smart home—like the smartphone—is here to stay. With over 80 million smart home devices delivered worldwide in 2016, 
@@ -146,11 +145,40 @@
                     <dd>Fill up the form displayed on EZ's Homepage.</dd>
                 </dl>
                 
-         
+              </div>
                  
         </div>
-        <div class="sub-content" style = "background-image:url(girl.jpg)">
+        <div class=" sub-content">
+          <img src="girl.jpg" alt="girl">
+          <div>
+            shkruj diqka qetu/qit foto
+          </div>
+          <div class="datalist">
+            <form >
+              <label for="category">Choose what are you interested on  from the list:</label>
+              <input list="Categories" name="category" id="category">
+              <datalist id="Categories">
+                <option value="Cameras">
+                <option value="Phones">
+                <option value="Sirens">
+                <option value="Remotes">
+                <option value="Thermostats">
+              </datalist>
+              <input type="submit">
+            </form>
+
+            <div class="audio">
+              <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+              </audio>
+            </div>
+            <p id = "test"></p>
+          </div>
+
+        
+
         </div>
+        
         
         <form id="form-home">
             <label for="fname">First name:</label><br>
@@ -167,18 +195,7 @@
             <input type="submit" value="Submit">
             
         </form> 
-        <form >
-          <label for="category">Choose what are you interested on  from the list:</label>
-          <input list="Categories" name="category" id="category">
-          <datalist id="Categories">
-            <option value="Cameras">
-            <option value="Phones">
-            <option value="Sirens">
-            <option value="Remotes">
-            <option value="Thermostats">
-          </datalist>
-          <input type="submit">
-        </form>
+        
         <!-- <form action="/action_page.php" method="get">
           Username: <input type="text" name="usr_name">
           Encryption: <keygen name="security">
@@ -192,20 +209,14 @@
         
         
 
+      
     </div>
-    <div class="audio">
-      <audio controls>
-        <source src="audio.mp3" type="audio/mp3">
-        
-      </audio>
     
-    </div>
       
     
 
 </body>
-<footer class="footer-container">
-    <div class="footer">
+<footer class="footer">
         <div class="footer-heading footer-1">
            <h4 style= "color:white"> order informations</h4>
            <a href="#">How To Order</a>
@@ -241,6 +252,5 @@
              
 
          </div>
-    </div>
 </footer>
 </html>
