@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="amusement.css">
     <link rel="stylesheet" href="footerstyle.css">
+    <script src="smart.js"></script>
     <style>
   canvas {
         border:2px solid #646060;
@@ -16,11 +17,11 @@
     }
     
     </style>
-    <script src="amusement.js"></script>
+    
   
 </head>
-<body onload="startGame()">
-    <header>
+<body onload="startGame()" >
+    <header id = "navbar">
         <a id="logo-link" href="Index.html">
           <img id="logo" src="logobardhe.jpg" alt="EZ Living logo">
         </a>
@@ -32,6 +33,7 @@
                   <li ><a  href="tipsandtricks.html">Tips and Tricks</a></li>
                   <li ><a  href="morehomecontrol.html">More Home Control</a></li>
                   <li ><a  href="amusement.html">Amusement</a></li>
+                  <li><img class = "cart" src="cart.jpg" alt="cart"></li>
                   <li><div class="box">
                     <form>
                         <input type="text" name="" placeholder="Type to search...">
@@ -169,7 +171,8 @@
           <p style="margin-left: 200px;">Use the ACCELERATE button to stay in the air</p>
           <p style="margin-left: 200px;">How long can you stay alive?</p>
         
-          <p id = "line"></p> <!--???????-->
+          <p id = "line"></p> 
+          
         
           <div class = "card-container">
             <div class = "card">
@@ -327,4 +330,13 @@
          </div>
     </div>
   </footer>
+  <script>
+    const liner = document.getElementById("line");
+      function line() {
+        liner.innerHTML+= "<3";
+      }
+
+      window.setInterval(line, 1000);
+      
+  </script>
 </html>

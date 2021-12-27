@@ -2,6 +2,15 @@
     margin-bottom: 200px;
     
 }
+body{
+    background: #005b96;
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    from {background-color: #005b96;}
+    50% {background-color: #b3cde0;}
+    to {background-color: #005b96;}
+  }
 p{
     margin:20px;
 }

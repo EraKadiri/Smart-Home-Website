@@ -5,6 +5,7 @@
   <style>
 h1 {
     text-shadow: 2px 2px #0c2b33;
+    padding-left: 20px;
   }
   @font-face {
   font-family: myFirstFont;
@@ -12,22 +13,20 @@ h1 {
 }
 p{
   font-family: myFirstFont;
+ 
 }
 .svg{
   width: 200px;
   height: 200px;
-  
   position: relative;
  animation: mymove 5s  ;
- 
 }
 
 @keyframes mymove {
 
   from {top: 0px;}
-  
-  50%  { top: 100px !important;} /* ignored */
-  to {top: 200px;}
+  50%  {top: 50px ease-in !important;} /* ignored */
+  to {top: 100px;}
 }
   
  
@@ -46,10 +45,8 @@ p{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EZ Living</title>
 
+    
     <script>
-       const time = new Date();
-       document.getElementById("test").innerHTML = time;
- 
         function setCookie(cname,cvalue,exdays) {
           const d = new Date();
           d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -94,7 +91,7 @@ p{
     }
  </style>
 <body onload="checkCookie()">
-    <header>
+    <header id= "navbar">
         <a id="logo-link" href="Index.html">
             <img id="logo" src="logobardhe.jpg" alt="EZ Living logo">
           </a>
@@ -106,6 +103,7 @@ p{
                 <li ><a  href="tipsandtricks.html">Tips And Tricks</a></li>
                 <li ><a  href="morehomecontrol.html">More Home Control</a></li>
                 <li ><a  href="amusement.html">Amusement</a></li>
+                <li><img class = "cart" src="cart.jpg" alt="cart"></li>
                 <li><div class="box">
                     <form>
                         <input type="text" name="" placeholder="Type to search...">
@@ -153,7 +151,7 @@ p{
             </div>
             
             <div class ="body-header">
-                 <a href="blog.html">Find More About Smart Homes</a> 
+                 <a href="blog.html"><span>Find More About Smart Homes</span></a> 
                     <br>
                     <br>
             </div>
@@ -186,12 +184,13 @@ p{
               </div>
                  
         </div>
-        <div class=" sub-content">
+        <div class="sub-content">
           <img src="girl.jpg" alt="girl">
           <div>
-            <img src="gif2.gif" alt="giphy"  />
-            <p>
+            
+            
               <h1>What is a smart device?</h1>
+              <p>
   A smart device is any electronic device that can be connected to your
    smart home system, that can interact with other devices, and that can make some decisions on its own. Televisions, 
    stoves, alarm systems, doorbells, garage doors and stereos are examples of smart devices.
@@ -199,6 +198,7 @@ p{
   making it easy to slowly transform your house into a smart home.
  
             </p>
+            <img src="gif2.gif" alt="giphy"  />
            
           </div>
          
@@ -218,11 +218,11 @@ p{
             </form>
 
             <div class="audio">
-              <audio controls>
+              <audio controls style="transform: translate(0px, 150px);">
                 <source src="audio.mp3" type="audio/mp3">
               </audio>
             </div>
-            <p id = "test"></p>
+            <p style="transform: translate(500px, 100px);">Date: <span id="test"></span></p>
           </div>
 
         
@@ -303,4 +303,8 @@ p{
 
          </div>
 </footer>
+<script>
+  const time = new Date();
+       document.getElementById("test").innerHTML = time.getDate() + "/" + time.getMonth() + "/" + time.getFullYear();
+</script>
 </html>
