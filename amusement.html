@@ -165,6 +165,13 @@
         function accelerate(n) {
             myGamePiece.gravity = n;
         }
+        function validate() {
+  let x = document.forms["footerform"]["footer-email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
         </script>
         <br>
         <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" style="margin-left: 200px;">ACCELERATE</button>
@@ -325,8 +332,11 @@
          <div class="footer-email-form">
              <h4 style= "color:white;">subscriptions</h4>
              <p style= "color:white; text-align: left;">Subscribe to our blog for daily <br> updates and new features!</p>
-             <input type="email" placeholder="enter your email address" id="footer-email"> <br>
-             <input type="Submit" value="Sign Up" id="footer-email-btn">
+             <form name="footerform" onsubmit="return validate()" method="post">
+              <input type="email" placeholder="enter your email address" id="footer-email" > <br>
+              <input type="Submit" value="Sign Up" id="footer-email-btn">
+             </form>
+              
          </div>
     </div>
   </footer>

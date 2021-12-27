@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="photostyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <script src="smart.js"></script>
+    <script src="smart.js">
+      
+    </script>
+    <script>
+      function mbushFormen() {
+  let x = document.forms["footerform"]["footer-email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+    </script>
     <title>More Home Control</title>
 
     
@@ -154,8 +165,11 @@
        <div class="footer-email-form">
            <h4 style= "color:white;">subscriptions</h4>
            <p style= "color:white; text-align: left;">Subscribe to our blog for daily <br> updates and new features!</p>
-           <input type="email" placeholder="enter your email address" id="footer-email"> <br>
-           <input type="Submit" value="Sign Up" id="footer-email-btn">
+           <form name="footerform" onsubmit="return mbushFormen()" method="post">
+            <input type="email" placeholder="enter your email address" id="footer-email" > <br>
+            <input type="Submit" value="Sign Up" id="footer-email-btn">
+           </form>
+            
        </div>
   </div>
 </footer>

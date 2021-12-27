@@ -29,6 +29,7 @@ p{
   to {top: 100px;}
 }
   
+
  
 
   </style>
@@ -81,6 +82,28 @@ p{
              }
           }
         }
+        function validateForm() {
+  let x = document.forms["form-home"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function validate() {
+  let x = document.forms["footerform"]["footer-email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+
+function myFunction() {
+  let text = document.getElementById("replace").innerHTML;
+  document.getElementById("replace").innerHTML =
+  text.replace("smart device","domotics");
+}
+
+
         </script>
 </head>
 <style>
@@ -131,7 +154,8 @@ p{
                   </article>
                   <article>
                  <p id = "main-paragraph">
-                    Using modern technologies in witty ways, <mark>these sites boost engagement,</mark>
+                    Using modern technologies in 
+                    <mark>these sites boost engagement,</mark>
                     breed affinity, prompt users to return, drive conversion, and encourage social sharing.
                     Through pageless designs, smart websites offer story-driven designs which intuitively 
                     and naturally lead users to an action. The ease of flow and 
@@ -190,14 +214,15 @@ p{
             
             
               <h1>What is a smart device?</h1>
-              <p>
+              <p id="replace">
   A smart device is any electronic device that can be connected to your
    smart home system, that can interact with other devices, and that can make some decisions on its own. Televisions, 
    stoves, alarm systems, doorbells, garage doors and stereos are examples of smart devices.
  Smart devices can be bought separately and over time, 
   making it easy to slowly transform your house into a smart home.
- 
+  <button onclick="myFunction()">Try it</button>
             </p>
+           
             <img src="gif2.gif" alt="giphy"  />
            
           </div>
@@ -230,7 +255,7 @@ p{
         </div>
         
         
-        <form id="form-home">
+        <form id="form-home" onsubmit="return validateForm()" method="post">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
@@ -297,8 +322,11 @@ p{
          <div class="footer-email-form">
              <h4 style= "color:white;">subscriptions</h4>
              <p style= "color:white; text-align: left;">Subscribe to our blog for daily <br> updates and new features!</p>
-             <input type="email" placeholder="enter your email address" id="footer-email"> <br>
+             
+             <form name="footerform" onsubmit="return validate()" method="post">
+             <input type="email" placeholder="enter your email address" id="footer-email" > <br>
              <input type="Submit" value="Sign Up" id="footer-email-btn">
+            </form>
              
 
          </div>

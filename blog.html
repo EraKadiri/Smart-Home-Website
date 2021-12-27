@@ -16,9 +16,22 @@
         window.history.back()
 
       }
+      function validate() {
+  let x = document.forms["footerform"]["footer-email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+function validate() {
+  let x = document.forms["footerform"]["footer-email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
 
-      </script>
-      
+     </script> 
     
 </head>
 
@@ -64,13 +77,13 @@
          </h2>
         
 
-         <div>   A smart home refers to a convenient home setup where appliances
+         <div > A smart home refers to a convenient home setup where appliances
          and devices can be automatically controlled remotely from anywhere
           with an internet connection using a mobile or other networked device. 
           Devices in a smart home are interconnected through the internet, allowing the user 
           to control functions such as security access to the home, temperature, lighting, 
           and a home theater remotely.
-        
+          
         </div>
       
     </div>
@@ -212,8 +225,11 @@
        <div class="footer-email-form">
            <h4 style= "color:white;">subscriptions</h4>
            <p style= "color:white; text-align: left;">Subscribe to our blog for daily <br> updates and new features!</p>
-           <input type="email" placeholder="enter your email address" id="footer-email"> <br>
-           <input type="Submit" value="Sign Up" id="footer-email-btn">
+           <form name="footerform" onsubmit="return validate()" method="post">
+            <input type="email" placeholder="enter your email address" id="footer-email" > <br>
+            <input type="Submit" value="Sign Up" id="footer-email-btn">
+           </form>
+            
        </div>
   </div>
 </footer>
