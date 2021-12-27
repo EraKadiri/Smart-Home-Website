@@ -17,7 +17,7 @@
     
     </style>
     <script src="amusement.js"></script>
-
+  
 </head>
 <body onload="startGame()">
     <header>
@@ -174,75 +174,99 @@
           <div class = "card-container">
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardone.png" alt="cardone" height="150px" width="110px" >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Thank you for choosing us! </div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me
+                  <img src="cardtwo.png" alt="cardtwo" height="150px" width="110px" >
+                </p>
+              </div>
+              <div class = "side back"> 175 million smart homes </div>
+            </div>
+            <div class = "card">
+              <div class = "side">
+                <p>click me
+                  <img src="cardthree.png" alt="cardthree" height="150px" width="110px" >
+                </p>
+              </div>
+              <div class = "side back"> 1 trillion photos in a year</div>
+            </div>
+            <div class = "card">
+              <div class = "side" >
+                <p>click me
+                  <img src="cardfour.png" alt="cardfour" height="150px" width="110px" > 
+                </p>
+              </div>
+              <div class = "side back"> More powerful than a spaceship</div>
             </div>
             <div class = "card">
               <div class = "side">
                 <p>click me</p>
+                <img src="card5.png" alt="card5" height="150px" width="110px"  >
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Largest Smart Home</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardsix.png" alt="cardsix" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Smart Homes save time</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardseven.png" alt="cardseven" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Most popular device</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardeight.png" alt="cardeight" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Revenue over $300 billion</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardnine.png" alt="cardnine" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Most common device</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardten.png" alt="cardten" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> Not much affordable</div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="cardeleven.png" alt="cardeleven" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"><p id="arrays"></p>
+                </div>
             </div>
             <div class = "card">
               <div class = "side">
-                <p>click me</p>
+                <p>click me
+                  <img src="card12.png" alt="card12" height="150px" width="110px"  >
+                </p>
               </div>
-              <div class = "side back"> you flipped me</div>
-            </div>
-            <div class = "card">
-              <div class = "side">
-                <p>click me</p>
-              </div>
-              <div class = "side back"> you flipped me</div>
-            </div>
-            <div class = "card">
-              <div class = "side">
-                <p>click me</p>
-              </div>
-              <div class = "side back"> you flipped me</div>
-            </div>
-            <div class = "card">
-              <div class = "side">
-                <p>click me</p>
-              </div>
-              <div class = "side back"> you flipped me</div>
+              <div class = "side back"> More male owners </div>
             </div>
           </div>
 
@@ -251,11 +275,19 @@
             <audio controls>
               <source src="audio2.mp3" type="audio/mp3">
             </audio>
-            
+           
         </div>
 
         </div>
+        <script>
+          const countries = ["Germany", "England", "Italy"];
+         
+
+           
+         
+          document.getElementById("arrays").innerHTML = countries[0];
           
+          </script>  
     
 </body>
 <footer class="footer-container-amusement">
