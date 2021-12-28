@@ -5,6 +5,7 @@
 body{
     background: #005b96;
     animation: mymove 10s infinite;
+    width:100%;
 }
 @keyframes mymove {
     from {background-color: #005b96;}
@@ -68,3 +69,18 @@ p{
     margin:20px;
 
 }
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2b6777;
+    color: #fff;
+  }

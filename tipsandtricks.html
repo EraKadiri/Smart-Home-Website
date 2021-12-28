@@ -22,6 +22,7 @@
     return false;
   }
 }
+
   
         </script>
         <style> 
@@ -50,10 +51,10 @@
             <li ><a  href="morehomecontrol.html">More Home Control</a></li>
             <li ><a  href="amusement.html">Amusement</a></li>
             <li><img class = "cart" src="cart.jpg" alt="cart"></li>
-            <li><div class="box">
+            <li><div class="box" id="nan">
                 <form>
-                    <input type="text" name="" placeholder="Type to search...">
-                    <input type="submit" name="" value="Search">
+                    <input type="text"id="isnumber" name="" placeholder="Type to search...">
+                    <input type="submit"id="button" name="" value="Search">
                 </form>
             </div></li>
         </ul>
@@ -83,7 +84,7 @@
                                 like streaming video or security cams</li>
                      </ul>
                  </li>
-                 <li>Find dead spots</li>
+                 <li>Find <span id="regexp"> </span> dead spots</li>
                  <li>Get used to voice control</li>
                  <li>Watch out for missing neutral wires in old home wiring</li>
                  <li>Use both Google Assistant and Alexa
@@ -200,5 +201,41 @@
                  </div>
             </div>
         </footer>
+        <script>
+
+            let pattern1=/SHW/g;
+            let result1 = pattern1.global;
+            console.log(result1);
+
+            let pattern2 = new RegExp("Hello World");
+            let text1 = pattern2.toString();
+            console.log(text1);
+
+            let text = "123456789";
+            let pattern = /[^1-4]/g;
+            let result = text.match(pattern);
+            document.getElementById("regexp").innerHTML = result;
+
+            let maxnumber=Number.MAX_VALUE;
+            console.log(maxnumber);
+
+            var button = document.getElementById("button");
+            button.onclick = function() {
+            var numberTest = parseInt(document.getElementById("isnumber").value);
+            if (Number.isNaN(numberTest) || numberTest == "" || numberTest === null) {
+             alert("No Number");
+                }
+            else {
+            alert("This is a number!");
+                }
+            };
+            
+            // let searchnumber=parseInt(document.getElementById(isnumber).value);
+            
+            // let result3="This search is: (false if a number,true if not a number ) "+number.isNaN(searchnumber);
+            // alert(result3);
+        </script> 
+        
 </body>
+
 </html>
