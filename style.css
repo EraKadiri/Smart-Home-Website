@@ -1,6 +1,12 @@
 #navbar{
     transition: top 0.3s;
 }
+.active {
+    color: rgb(162, 193, 240);
+    font-weight: bolder;
+    
+    
+  }
 body{
     margin: 0;
     padding: 0;
