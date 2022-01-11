@@ -66,6 +66,13 @@ p{
       //   });
       // });
 
+        $(document).ready(function(){
+        $("#remove").click(function(){
+          $("#svg").remove(".svg")
+          
+        });
+      }); 
+
 
         function setCookie(cname,cvalue,exdays) {
           const d = new Date();
@@ -218,11 +225,16 @@ function myFunction() {
                     <dd>Fill up the form displayed on EZ's Homepage.</dd>
 
                 </dl>
-                <svg class="svg" width="300" height="200">
+ 
+                <svg class="svg" width="300" height="200" id = "svg">
                   <polygon points="100,10 40,198 190,78 10,78 160,198"
                   style="fill:#f2f2f2;stroke:#52ab98;stroke-width:5;fill-rule:evenodd;" />
                 Sorry, your browser does not support inline SVG.
                 </svg>
+
+                  <button id = "remove">X</button>
+
+                
                 
               </div>
                  

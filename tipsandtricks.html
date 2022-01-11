@@ -47,8 +47,9 @@
               border: 1px solid black;
               background-color: #f2f2f2;
               outline: 4px solid #1c4a57;
-              outline-offset: 15px;
+              /* outline-offset: 15px; */
               box-sizing:border-box;
+             
             } 
             </style>
 
@@ -83,9 +84,7 @@
           <source src="tipsandtricks.mp4" type="video/mp4">
           
         </video>
-        <div class = "goBack">
-            <input type="button" value="Back" onclick="goBack()">
-        </div>
+        
         
 
     <div class = "container">
@@ -195,6 +194,16 @@
                 </ol>
             </div>
             
+
+         </div>
+         <div class="backup-button">
+             <div class="back">
+                 <button  class = "backup" id="back-button" onclick="goBack()" >Go Back</button> 
+               
+             </div>
+             <div class="up">
+                <button class = "backup" id="up-button" onclick>Go Up</button>
+             </div>
 
          </div>
          

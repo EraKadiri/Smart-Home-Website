@@ -17,6 +17,13 @@
           $("#reminder").hide();
         });
       });
+
+
+      // $(document).ready(function(){
+      //   $("#remove").click(function(){
+      //     $("#audio2").remove(".audio2");
+      //   });
+      // }); 
     </script>
     
   
@@ -157,11 +164,13 @@
           </div>
 
           <div class="audio-two">
-          
-            <audio controls>
-              <source src="audio2.mp3" type="audio/mp3">
-            </audio>
-           
+            <div class = "audio2" id = "audio2">
+              <audio controls >
+                <source src="audio2.mp3" type="audio/mp3">
+                
+              </audio>
+            </div>
+            <!-- <button id = "remove">X</button> -->
         </div>
 
         <script>
@@ -223,5 +232,5 @@
   </script>
 
   <script src="smart.js"></script>
-  <script src="amusement.js"></script>
+ 
 </html>

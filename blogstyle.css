@@ -3,15 +3,6 @@ body{
     
 }
 
-div.blog-div{
-    width:30%;
-    float:left;
-    margin:20px;
-    text-align: justify;
-    color:black;
-    
-
-}
 table {
     border-collapse: collapse;
     width: 100%;
@@ -88,5 +79,23 @@ tr:hover {
         margin-right: 40px;
     
     }
+    #slidediv1{
+        display:none;
+    }
+    #slidediv2{
+        display:none;
+    }
+    #slidediv3{
+        display:none;
+    }
+   #slide1{
+       text-align: center;
+   }
+   #slide2{
+    text-align: center;
+}
+#slide3{
+    text-align: center;
+}
 
    

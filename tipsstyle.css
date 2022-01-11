@@ -20,7 +20,7 @@ body{
   }
 
 .container{
-    height:580px;
+    height:620px;
     padding-right: 20px;
     margin-bottom: 200px;
 }
@@ -40,4 +40,84 @@ video{
 }
 #showdiv3{
     display:none;
+}
+.backup-button{
+    width:100%;
+    height:100px;
+    padding-top:50px;
+    margin-top:620px;
+    position:absolute;
+
+}
+.up{
+    width:50%;
+    float:left;
+    
+}
+.back{
+    width:50%;
+    float:left;
+}
+#back-button{
+    margin-left: 100px;
+    
+}
+#up-button{
+margin-left: 500px;
+}
+
+.backup{
+    height:40px;
+    width:80px;
+    padding:5px;
+    border-radius: 50px;
+    transition: all .2s;
+    background-color: rgb(153, 183, 238);
+    color: black;
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+    text-decoration: none;
+
+}
+
+.backup:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.backup:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.backup::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: #fff;
+}
+
+
+.backup:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
