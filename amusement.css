@@ -1,5 +1,6 @@
 .amusement-container{
     margin-bottom: 200px;
+    margin-top:50px;
     
 }
 body{
@@ -69,18 +70,17 @@ p{
     margin:20px;
 
 }
-#mydiv {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    text-align: center;
-    border: 1px solid #d3d3d3;
-  }
-  
-  #mydivheader {
+ 
+#reminder{
+    width:80%;
+    margin:auto;
+    height: 50px;
     padding: 10px;
-    cursor: move;
-    z-index: 10;
-    background-color: #2b6777;
-    color: #fff;
-  }
+    background-color: rgb(204, 180, 129);
+    opacity:0.5;
+    
+}
+
+#reminder button{
+    background-color:orange;
+}

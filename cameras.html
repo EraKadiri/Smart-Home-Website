@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="smart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Cameras</title>
     
     <script>
@@ -18,8 +20,16 @@
   if (x == "") {
     alert("Email must be filled out");
     return false;
+
+    
   }
+  
 }
+  // $(document).ready(function(){
+  //   $("#content").on('mouseenter', function(){
+  //     alert("You entered p1!");
+  //   })
+  // });
     </script>
     
 </head>
@@ -50,8 +60,8 @@
 
   <div class="cameras-container">
     <div class="gallery-row">
-      <div class="content" >
-        <img
+      <div class="content"  id = "content">
+        <img 
           src="fototcameras\nestcam.jpg"
           alt="nestcam"
           title="Nest Cam IQ Outdoor"
@@ -59,7 +69,7 @@
         <h3><span>Nest Cam IQ Outdoor</span> - 199.99$</h3>
         
       </div>
-      <div class="content">
+      <div class="content" id = "content">
         <img
           src="fototcameras\YI 1080.jpg"
           alt="YI"
@@ -67,7 +77,7 @@
         />
         <h3><span>YI 1080p Smart Home Camera</span> - 899.90$</h3>
       </div>
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\veracma.jpg"
           alt="veracam"
@@ -77,7 +87,7 @@
       </div>
     </div>
     <div class="gallery-row">
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\augustdoorbell.jpg"
           alt="augustdoorbell"
@@ -85,7 +95,7 @@
         />
         <h3><span>August Doorbell CamPro</span> - 69.95$</h3>
       </div>
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\maximussmart.jpg"
           alt="maximussmart"
@@ -93,7 +103,7 @@
         />
         <h3><span>Maximus Smart Traditional Porch</span> - 249.99$</h3>
       </div>
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\honeywell.jpg"
           alt="honeywell"
@@ -103,7 +113,7 @@
       </div>
     </div>
     <div class="gallery-row">
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\ringspotlight.jpg"
           alt="ringspotlight"
@@ -112,7 +122,7 @@
         <h3><span>Ring Spotlight Cam Wired</span> - 169.99$</h3>
       </div>
 
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\samsung.jpg"
           alt="samsung"
@@ -120,7 +130,7 @@
         />
         <h3><span>Samsung Smart Things Cam</span> - 399.99$</h3>
       </div>
-      <div class="content">
+      <div class="content"  id = "content">
         <img
           src="fototcameras\wyzejpeg.jpeg"
           alt="wyze"

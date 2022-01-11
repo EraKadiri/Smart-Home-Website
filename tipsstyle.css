@@ -5,6 +5,9 @@ div.tips-div{
     margin:10px;
     color:black;
 }
+.tips-div h3{
+    text-align: center;
+}
 body{
     background-color: white;
 }
@@ -26,4 +29,15 @@ video{
     margin-top: 100px;
         margin-left: 150px;
         margin-right: 40px;
+}
+
+
+#showdiv1{
+    display:none;
+}
+#showdiv2{
+    display:none;
+}
+#showdiv3{
+    display:none;
 }

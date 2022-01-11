@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="smart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Tips And Tricks</title>
 
     <script>
@@ -22,7 +24,21 @@
     return false;
   }
 }
-
+    $(document).ready(function(){
+        $("#fade1").click(function(){
+            $("#showdiv1").fadeIn(3000);
+        });
+    });
+    $(document).ready(function(){
+        $("#fade2").click(function(){
+            $("#showdiv2").fadeIn(3000);
+        });
+    });
+    $(document).ready(function(){
+        $("#fade3").click(function(){
+            $("#showdiv3").fadeIn(3000);
+        });
+    });
   
         </script>
         <style> 
@@ -74,87 +90,111 @@
 
     <div class = "container">
         <h2 id = "border-img" style ="text-align: center;">Helping You Build a Smart Home</h2>
+        
         <div class ="tips-div" >
-             <ol> <br><br><br>
-                 <li>Use LAN when you can
-                     <ul>
-                            <li>wire your home with CAT6 for wired LAN access in as many 
-                                rooms as possible</li>
-                            <li>especially important if you have multiple high bandwidth devices 
-                                like streaming video or security cams</li>
-                     </ul>
-                 </li>
-                 <li>Find <span id="regexp"> </span> dead spots</li>
-                 <li>Get used to voice control</li>
-                 <li>Watch out for missing neutral wires in old home wiring</li>
-                 <li>Use both Google Assistant and Alexa
-                    <ul>
-                        <li>connect all your smart home devices to both Google and Alexa 
-                            at the same time</li>
-                        <li>use whichever is most convenient to control your devices.</li>
-                    </ul>
-                 </li>
-                 <li>Family acceptance</li>
-                 <li>Smart switches are usually better than smart bulbs</li>
-                 <li>Learn to use geofencing</li>
-                 <li>Map it out from the start</li>
-                 <li>Smart switches don’t need to be wired together to work together.</li>
-             </ol>
+            <div id = "fade1">
+                <h3>Smart Homes saves lives</h3>
+            </div>
+
+            <div id = "showdiv1">
+                <ol> <br>
+                    <li>Use LAN when you can
+                        <ul>
+                               <li>wire your home with CAT6 for wired LAN access in as many 
+                                   rooms as possible</li>
+                               <li>especially important if you have multiple high bandwidth devices 
+                                   like streaming video or security cams</li>
+                        </ul>
+                    </li>
+                    <li>Find <span id="regexp"> </span> dead spots</li>
+                    <li>Get used to voice control</li>
+                    <li>Watch out for missing neutral wires in old home wiring</li>
+                    <li>Use both Google Assistant and Alexa
+                       <ul>
+                           <li>connect all your smart home devices to both Google and Alexa 
+                               at the same time</li>
+                           <li>use whichever is most convenient to control your devices.</li>
+                       </ul>
+                    </li>
+                    <li>Family acceptance</li>
+                    <li>Smart switches are usually better than smart bulbs</li>
+                    <li>Learn to use geofencing</li>
+                    <li>Map it out from the start</li>
+                    <li>Smart switches don’t need to be wired together to work together.</li>
+                </ol>
+            </div>
+ 
+            
              <div >  
             </div>
         </div>
+       
         <div class ="tips-div">
-        <ol> <br><br><br>
-            <li>Minimize battery use</li>
-            <li>Try a wall mount for your Echo Dot</li>
-            <li>Smart thermostats are usually the biggest money saver</li>
-            <li>Check for rebates with your power company
-                <ul>
-                    <li>power companies offer rebates when you buy
-                        a new smart thermostat</li>
-                    <li>You may also be able to score a discount from your 
-                        homeowner’s insurance for security related products</li>
-             </ul>
-            </li>
-            <li>Leverage communities for help</li>
-            <li>Protect your privacy</li>
-            <li>Smart thermostats work best with a c-wire</li>
-            <li>Name your smart devices</li>
-            <li>Participate in demand response programs</li>
-            <li>Colored bulbs are really cool
-                <ul>
-                    <li>There are preset scenes available 
-                        (with names like Savanna sunset and Arctic aurora) that set each
-                         bulb to it’s own color</li>
-                    <li>The combination of colors together creates a spectacular effect</li>
-                </ul>
-            </li>
-        </ol>
-        </div> 
-        <div class = "tips-div">
+            <div id = "fade2">
+                <h3>Design your future</h3>
+            </div>
+            
+            <div id = "showdiv2">
+                <ol> <br>
+                    <li>Minimize battery use</li>
+                    <li>Try a wall mount for your Echo Dot</li>
+                    <li>Smart thermostats are usually the biggest money saver</li>
+                    <li>Check for rebates with your power company
+                        <ul>
+                            <li>power companies offer rebates when you buy
+                                a new smart thermostat</li>
+                            <li>You may also be able to score a discount from your 
+                                homeowner’s insurance for security related products</li>
+                     </ul>
+                    </li>
+                    <li>Leverage communities for help</li>
+                    <li>Protect your privacy</li>
+                    <li>Smart thermostats work best with a c-wire</li>
+                    <li>Name your smart devices</li>
+                    <li>Participate in demand response programs</li>
+                    <li>Colored bulbs are really cool
+                        <ul>
+                            <li>There are preset scenes available 
+                                (with names like Savanna sunset and Arctic aurora) that set each
+                                 bulb to it’s own color</li>
+                            <li>The combination of colors together creates a spectacular effect</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
         
-            <ol> <br><br><br>
-                <li>Cheap bulbs with Philips Hue
-                    <ul>
-                        <li>The Philips Hue system uses the Zigbee protocol</li>
-                 </ul>
-                </li>
-                <li>Use Alexa routines</li>
-                <li>Go cross platform</li>
-                <li> Keep a list of passwords</li>
-                <li> Use LED strips</li>
-                <li>Beware of crowdfunded startups with big promises
-                    <ul>
-                        <li>If you choose to invest in one, be aware that
-                             deadlines are often missed and sometimes products are never delivered</li>
-                        <li>Your money could be tied up for awhile</li>
-                 </ul>
-                </li>
-                <li>Buy from a place with a good return policy</li>
-                <li> Learn to use IFTTT, Stringify, and Tasker</li>
-                <li>Ceiling fans require special smart switches</li>
-                <li>Consider a second router to secure your home network</li>
-            </ol>
+        </div> 
+        
+        <div class = "tips-div">
+            <div id = "fade3">
+                <h3>Real comfort in living smart</h3>
+            </div>    
+            <div id = "showdiv3">
+                <ol> <br>
+                    <li>Cheap bulbs with Philips Hue
+                        <ul>
+                            <li>The Philips Hue system uses the Zigbee protocol</li>
+                     </ul>
+                    </li>
+                    <li>Use Alexa routines</li>
+                    <li>Go cross platform</li>
+                    <li> Keep a list of passwords</li>
+                    <li> Use LED strips</li>
+                    <li>Beware of crowdfunded startups with big promises
+                        <ul>
+                            <li>If you choose to invest in one, be aware that
+                                 deadlines are often missed and sometimes products are never delivered</li>
+                            <li>Your money could be tied up for awhile</li>
+                     </ul>
+                    </li>
+                    <li>Buy from a place with a good return policy</li>
+                    <li> Learn to use IFTTT, Stringify, and Tasker</li>
+                    <li>Ceiling fans require special smart switches</li>
+                    <li>Consider a second router to secure your home network</li>
+                </ol>
+            </div>
+            
 
          </div>
          
