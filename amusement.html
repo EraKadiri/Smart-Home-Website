@@ -14,8 +14,10 @@
       $(document).ready(function(){
         $("button").click(function(){
           $("#reminder").hide();
+          alert($("#removereminder").text());
         });
       });
+
 
 
       // $(document).ready(function(){
@@ -23,6 +25,7 @@
       //     $("#audio2").remove(".audio2");
       //   });
       // }); 
+
     </script>
     
   
@@ -53,10 +56,14 @@
       <div class="amusement-container">
         <br><br>
         <div id = "reminder">
-          <p>
+          <p><button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
             DON'T FORGET TO COME VISIT US AGAIN!
           </p>
-          <button>X</button>
+          <!-- <button>X</button> -->
+          
+          <p id = "removereminder" style="display: none;"> Reminder removed successfully!</p>
         </div>
 
        

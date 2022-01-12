@@ -82,5 +82,10 @@ p{
 }
 
 #reminder button{
-    background-color:orange;
+    background-color:rgb(207, 205, 200);
+    height:25px;
+    width:25px;
+    text-decoration: none;
+    border: none;
+    transform:translate(1050px,-20px);
 }
