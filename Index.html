@@ -28,10 +28,6 @@ p{
   50%  {top: 50px ease-in !important;} /* ignored */
   to {top: 100px;}
 }
-  
-
- 
-
   </style>
   
     <meta charset="UTF-8">
@@ -46,7 +42,6 @@ p{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EZ Living</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     
    
   <script>
@@ -58,13 +53,6 @@ p{
         });
     });
 
-   
-
-      // $(document).ready(function(){
-      //   $("#toggle").click(function(){
-      //     $("#replace").toggle(3000);
-      //   });
-      // });
 
         $(document).ready(function(){
         $("#remove").click(function(){
@@ -124,11 +112,23 @@ function validate() {
 }
 
 function myFunction() {
-  let text = document.getElementById("replace").innerHTML;
+   let text = document.getElementById("replace").innerHTML;
   document.getElementById("replace").innerHTML =
   text.replace("smart device","domotics");
-}
+ }
 
+ var x = document.getElementById("replace");
+      function getLocation() {
+         if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+       } else {
+           x.innerHTML = "Geolocation is not supported by this browser.";
+        }       }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+      }
 
         </script>
 </head>
@@ -162,6 +162,7 @@ function myFunction() {
             </ul> 
         </nav>
     </header>
+    
     
     <div class= "container">
         <div class="main-content">
@@ -218,6 +219,7 @@ function myFunction() {
                     Smart home devices are not always energy efficient, but most can be utilized in ways that help you conserve energy. When you have smart home appliances, lights, or a smart thermostat, you control when and how these will turn on and function. Therefore, you have more control 
                     over your energy usage and are more likely to change your energy consumption habits.
                 </p> 
+               
                 <dl id = "main-paragraph">
                     <dt>How will you use EZ?</dt>
                     <dd>Click on one of the different categories of smart home equipment and add the products you want to buy to cart. </dd>
@@ -252,6 +254,10 @@ function myFunction() {
  Smart devices can be bought separately and over time, 
   making it easy to slowly transform your house into a smart home.
   <button onclick="myFunction()">Try it</button>
+  <button onclick="getLocation()">Try It</button>
+
+  
+
             </p>
            
             <img src="gif2.gif" alt="giphy"  />
