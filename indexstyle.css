@@ -1,3 +1,5 @@
+
+
 .body-header{
     text-align: center;
 }
@@ -51,7 +53,7 @@
     float:left;
     background-color: #2b6777;
     padding-top:10px;
-    padding-bottom: 181px;
+    padding-bottom: 241px;
     margin-bottom: 0%; 
 }
 #main-paragraph{
@@ -67,6 +69,14 @@
   margin-right: auto; 
    width: 80%; 
    opacity:0.7;
+}
+.svg{
+    margin:20px;
+    width:350px;
+    height:100px;
+}
+.svg-text{
+    font-size: 22px;
 }
 .sub-content{
     float:left;
