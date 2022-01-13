@@ -190,7 +190,7 @@
     color:white;
     transition: all 0.4s ease-out;
 }
-.gotopbtn{
+ #btnScrolltoTop{
     position:fixed;
     width:50px;
     height:50px;
@@ -203,4 +203,7 @@
     color:white;
     font-size:22px;
     z-index:1;
-}
+    cursor:pointer;
+    outline:none;
+    border:none;
+} 

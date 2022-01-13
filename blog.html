@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blogstyle.css">
     <link rel="stylesheet" href="footerstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="smart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>BLOG</title>
     
      <script>
-      function goBack() {
-        window.history.back()
+       function goBack() {
+          window.history.back()
+        }
 
-      }
       function validate() {
   let x = document.forms["footerform"]["footer-email"].value;
   if (x == "") {
@@ -103,10 +106,7 @@ $(document).ready(function(){
   </video>
 
 <!-- </div> -->
- <div class = "goBack">
-<input type="button" value="Back" onclick="goBack()">
-</div> 
- 
+
   <div class = "container">
     <div class ="blog-div" >
         <div id="slide1">
@@ -178,6 +178,25 @@ $(document).ready(function(){
         savings. Appliances and electronics can be used more efficiently, lowering energy costs.
       </div>
      </div>
+     
+     <div class="back-button">
+      <div class="back">
+          <button  class = "back" id="back-button" onclick="goBack()" ><i class="material-icons">arrow_back</i></button> 
+        
+      </div>
+
+
+     <div class="up">
+      <button id="btnScrolltoTop">
+          <i class="material-icons">arrow_upward</i>
+        </button>
+         <script>
+           const btnScrolltoTop= document.querySelector('#btnScrolltoTop');
+           btnScrolltoTop.addEventListener("click", function(){
+             window.scrollTo(0, 0);
+           });
+         </script>
+   </div>
     
       
         <table class = "blog-table">

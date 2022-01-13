@@ -7,21 +7,22 @@ h1 {
     text-shadow: 2px 2px #0c2b33;
     padding-left: 20px;
   }
+
   @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
+
 p{
   font-family: myFirstFont;
- 
 }
+
 .svg{
   width: 200px;
   height: 200px;
   position: relative;
  animation: mymove 5s  ;
 }
-
 
 @keyframes mymove {
 
@@ -38,15 +39,16 @@ p{
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footerstyle.css">
     <link rel="stylesheet" href="indexjava.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
     <script src="smart.js"></script>
-   
     <title>EZ Living</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
    
   <script>
+
     $(document).ready(function(){
         $("#toggle").dblclick(function(){
           $("#replace").toggle(3000, function(){
@@ -56,13 +58,12 @@ p{
     });
 
 
-        $(document).ready(function(){
+     $(document).ready(function(){
         $("#remove").click(function(){
           $("#svg").remove(".svg")
           
         });
       }); 
-
 
         function setCookie(cname,cvalue,exdays) {
           const d = new Date();
@@ -141,6 +142,7 @@ function myFunction() {
       color: black;
     }
  </style>
+
 <body onload="checkCookie()">
     <header id= "navbar">
         <a id="logo-link" href="Index.html">
@@ -163,8 +165,17 @@ function myFunction() {
             </ul> 
         </nav>
     </header>
-    <a class="gotopbtn"href="#"><i class="fas fa-arrow-up"></i></i></a>
-    
+   <button id="btnScrolltoTop">
+     <i class="material-icons">arrow_upward</i>
+   </button>
+
+    <script>
+      const btnScrolltoTop= document.querySelector('#btnScrolltoTop');
+      btnScrolltoTop.addEventListener("click", function(){
+        window.scrollTo(0, 0);
+      });
+    </script>
+
     <div class= "container">
         <div class="main-content">
             <div class ="body-header">
@@ -172,8 +183,7 @@ function myFunction() {
     
             </div>
             <br><br>
-           
-            
+        
             <div>
            <article>
 
@@ -237,33 +247,25 @@ function myFunction() {
                 </svg>
 
                   <button id = "remove">X</button>
-
-                
-                
               </div>
                  
         </div>
         <div class="sub-content">
           <img src="girl.jpg" alt="girl" > 
+
           <div>
-            
-            
               <h1 id = "toggle">What is a smart device?</h1>
               <p id="replace">
-  A smart device is any electronic device that can be connected to your
-   smart home system, that can interact with other devices, and that can make some decisions on its own. Televisions, 
-   stoves, alarm systems, doorbells, garage doors and stereos are examples of smart devices.
- Smart devices can be bought separately and over time, 
+      A smart device is any electronic device that can be connected to your
+      smart home system, that can interact with other devices, and that can make some decisions on its own. Televisions, 
+      stoves, alarm systems, doorbells, garage doors and stereos are examples of smart devices.
+      Smart devices can be bought separately and over time, 
   making it easy to slowly transform your house into a smart home.
-  <button onclick="myFunction()">Try it</button>
-  <button onclick="getLocation()">Try It</button>
-
-  
-
+                 <button onclick="myFunction()">Try it</button>
+                 <button onclick="getLocation()">Try It</button>
             </p>
            
             <img src="gif2.gif" alt="giphy"  />
-           
           </div>
          
           <div class="datalist">
@@ -280,6 +282,26 @@ function myFunction() {
               <input type="submit">
              
             </form>
+            <div id="counter" style="text-align: center;color:#063946"></div>
+          <script>
+  var visits = localStorage.getItem('on_load_counter');
+  var sessionVisits = sessionStorage.getItem('session_counter');
+
+  if (visits === null) {
+    visits = 0;
+}
+  if (sessionVisits === null) {
+  sessionVisits = 0;
+}
+
+  sessionVisits++;
+  visits++;
+
+  localStorage.setItem("on_load_counter", visits);
+  sessionStorage.setItem("session_counter", sessionVisits)
+
+  document.getElementById('counter').innerHTML = "You visited our website  " + visits + " times (" + sessionVisits + " times in this session).Your interest means a lot to us.Thank You!";
+  </script>
 
             <div class="audio">
               <audio controls style="transform: translate(0px, 150px);">
@@ -288,11 +310,7 @@ function myFunction() {
             </div>
             <p style="transform: translate(500px, 100px);">Date: <span id="test"></span></p>
           </div>
-
-        
-
         </div>
-        
         
         <form id="form-home" onsubmit="return validateForm()" method="post">
             <label for="fname">First name:</label><br>
@@ -307,11 +325,10 @@ function myFunction() {
             <label for="pwd">Password:</label><br>
             <input type="password" id="pwd" name="pwd" required><br> <br>
             <input type="submit" value="Submit">
-            
         </form>    
     </div>
-    
 </body>
+
 <footer class="footer">
         <div class="footer-heading footer-1">
            <h4 style= "color:white"> order informations</h4>
@@ -328,7 +345,6 @@ function myFunction() {
             <a href="#">Privacy Policy</a>
             <a href="#">Career Opportunities</a> <br>
                  
-            
          </div>
          <div class="footer-heading footer-3">
            <address><h4 style= "color:white">social media</h4>
@@ -348,10 +364,9 @@ function myFunction() {
              <input type="email" placeholder="enter your email address" id="footer-email" > <br>
              <input type="Submit" value="Sign Up" id="footer-email-btn">
             </form>
-             
-
          </div>
 </footer>
+
 <script>
   const time = new Date();
        document.getElementById("test").innerHTML = time.getDate() + "/" + time.getMonth() + "/" + time.getFullYear();
