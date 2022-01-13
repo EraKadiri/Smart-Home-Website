@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="photostyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <script src="smart.js">
-      
-    </script>
+    <script src="smart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       function mbushFormen() {
   let x = document.forms["footerform"]["footer-email"].value;
@@ -20,6 +19,67 @@
     return false;
   }
 }
+$(document).ready(function(){ 
+    $("#content1").mouseenter(function(){
+      $("#content1").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content2").mouseenter(function(){
+      $("#content2").animate({width: '500px'});
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content3").mouseenter(function(){
+      $("#content3").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content4").mouseenter(function(){
+      $("#content4").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content5").mouseenter(function(){
+      $("#content5").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content6").mouseenter(function(){
+      $("#content6").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content7").mouseenter(function(){
+      $("#content7").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content8").mouseenter(function(){
+      $("#content8").animate({width: '500px'});
+
+    })
+  });
+
+  $(document).ready(function(){
+    $("#content9").mouseenter(function(){
+      $("#content9").animate({width: '500px'});
+
+    })
+  });
     </script>
     <title>More Home Control</title>
 
@@ -52,7 +112,7 @@
 
   <div class="cameras-container">
     <div class="gallery-row">
-      <div class="content">
+      <div class="content" id = "content1">
         <img
           src="fotothomecontrol\wisetech.jpg"
           alt="wisetech"
@@ -60,7 +120,7 @@
         />
         <h3><span>WiseTech International Corder Control</span> 45.99$</h3>
       </div>
-      <div class="content">
+      <div class="content" id = "content2">
         <img
           src="fotothomecontrol\lifx.jpg"
           alt="lifx"
@@ -68,7 +128,7 @@
         />
         <h3><span>LIFX App Controlled Wi-Fi</span> 399.99$</h3>
       </div>
-      <div class="content">
+      <div class="content" id = "content3">
         <img
           src="fotothomecontrol/nestsecurealarm.jpg"
           alt="nestsecurealarm"
@@ -78,7 +138,7 @@
       </div>
     </div>
     <div class="gallery-row">
-      <div class="content">
+      <div class="content" id = "content4">
         <img
           src="fotothomecontrol\motion.jpg"
           alt="motion"
@@ -86,7 +146,7 @@
         />
         <h3><span>Insteon Motion Sensor</span> 78.80$</h3>
       </div>
-      <div class="content">
+      <div class="content" id = "content5">
         <img
           src="fotothomecontrol\insteonsirens.jpg"
           alt="insteonsirens"
@@ -94,7 +154,7 @@
         />
         <h3><span>Insteon Siren</span> 500.00$</h3>
       </div>
-      <div class="content">
+      <div class="content" id = "content6">
         <img
           src="fotothomecontrol\ultraloq.jpg"
           alt="ultraloq"
@@ -104,7 +164,7 @@
       </div>
     </div>
     <div class="gallery-row">
-      <div class="content">
+      <div class="content" id = "content7">
         <img
           src="fotothomecontrol\insteonremote.jpg"
           alt="insteonremote"
@@ -113,7 +173,7 @@
         <h3><span>Insteon Remote Control Plug-in Low Voltage</span> 300.00$</h3>
       </div>
 
-      <div class="content">
+      <div class="content" id = "content8">
         <img
           src="fotothomecontrol\termostati.jpg"
           alt="termostati"
@@ -121,7 +181,7 @@
         />
         <h3><span>GLAS Smart Thermostat</span> 499.99$</h3>
       </div>
-      <div class="content">
+      <div class="content" id = "content9">
         <img
           src="fotothomecontrol\smartdimmer.jpg"
           alt="smartdimmer"

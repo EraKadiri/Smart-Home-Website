@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="amusement.css">
     <link rel="stylesheet" href="footerstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
    
@@ -17,15 +18,8 @@
           alert($("#removereminder").text());
         });
       });
-
-
-
-      // $(document).ready(function(){
-      //   $("#remove").click(function(){
-      //     $("#audio2").remove(".audio2");
-      //   });
-      // }); 
-
+     
+      
     </script>
     
   
@@ -61,14 +55,10 @@
           </button>
             DON'T FORGET TO COME VISIT US AGAIN!
           </p>
-          <!-- <button>X</button> -->
+          
           
           <p id = "removereminder" style="display: none;"> Reminder removed successfully!</p>
         </div>
-
-       
-
-
         
           <p id = "line"></p> 
           
@@ -179,7 +169,7 @@
                 
               </audio>
             </div>
-            <!-- <button id = "remove">X</button> -->
+            
         </div>
 
         <script>
@@ -187,7 +177,7 @@
           document.getElementById("arrays").innerHTML = countries[0];
           
           </script>  
-  
+         
 </body>
 <footer class="footer-container-amusement">
     <div class="footer">
@@ -236,6 +226,12 @@
       }
 
       window.setInterval(line, 1000);
+
+      
+    
+     
+    
+    
       
 
   </script>
