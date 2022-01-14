@@ -8,10 +8,10 @@ h1 {
     padding-left: 20px;
   }
 
-  @font-face {
+  /* @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
-}
+} */
 
 p{
   font-family: myFirstFont;
@@ -38,10 +38,9 @@ p{
     <link rel="stylesheet" href="indexstyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footerstyle.css">
-    <link rel="stylesheet" href="indexjava.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <!-- <link rel="shortcut icon" href="/assets/favicon.ico"> -->
     <script src="smart.js"></script>
     <title>EZ Living</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -129,8 +128,9 @@ function myFunction() {
         }       }
       
       function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
+        x = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
+        console.log(x);
       }
 
         </script>
@@ -261,8 +261,9 @@ function myFunction() {
       stoves, alarm systems, doorbells, garage doors and stereos are examples of smart devices.
       Smart devices can be bought separately and over time, 
   making it easy to slowly transform your house into a smart home.
-                 <button onclick="myFunction()">Try it</button>
-                 <button onclick="getLocation()">Try It</button>
+                 <button onclick="myFunction()">Click me</button>
+                 <button onclick="getLocation()">Get Location</button>
+
             </p>
            
             <img src="gif2.gif" alt="giphy"  />
@@ -283,32 +284,14 @@ function myFunction() {
              
             </form>
             <div id="counter" style="text-align: center;color:#063946"></div>
-          <script>
-  var visits = localStorage.getItem('on_load_counter');
-  var sessionVisits = sessionStorage.getItem('session_counter');
-
-  if (visits === null) {
-    visits = 0;
-}
-  if (sessionVisits === null) {
-  sessionVisits = 0;
-}
-
-  sessionVisits++;
-  visits++;
-
-  localStorage.setItem("on_load_counter", visits);
-  sessionStorage.setItem("session_counter", sessionVisits)
-
-  document.getElementById('counter').innerHTML = "You visited our website  " + visits + " times (" + sessionVisits + " times in this session).Your interest means a lot to us.Thank You!";
-  </script>
+          
 
             <div class="audio">
-              <audio controls style="transform: translate(0px, 150px);">
+              <audio controls style="transform: translate(0px, 80px);">
                 <source src="audio.mp3" type="audio/mp3">
               </audio>
             </div>
-            <p style="transform: translate(500px, 100px);">Date: <span id="test"></span></p>
+            <p style="transform: translate(500px, 30px);">Date: <span id="test"></span></p>
           </div>
         </div>
         
@@ -370,5 +353,25 @@ function myFunction() {
 <script>
   const time = new Date();
        document.getElementById("test").innerHTML = time.getDate() + "/" + time.getMonth() + "/" + time.getFullYear();
+
+
+              var visits = localStorage.getItem('on_load_counter');
+              var sessionVisits = sessionStorage.getItem('session_counter');
+
+              if (visits === null) {
+                visits = 0;
+              }
+              if (sessionVisits === null) {
+                sessionVisits = 0;
+              }
+
+              sessionVisits++;
+              visits++;
+
+              localStorage.setItem("on_load_counter", visits);
+              sessionStorage.setItem("session_counter", sessionVisits)
+
+            document.getElementById('counter').innerHTML = "You visited our website  " + visits + " times (" + sessionVisits + " times in this session).Your interest means a lot to us.Thank You!";
+
 </script>
 </html>
